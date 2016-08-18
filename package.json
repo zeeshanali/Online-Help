@@ -1,6 +1,6 @@
 {
   "name": "intel-help-docs",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "The IML GUI help docs",
   "main": "index.js",
   "scripts": {},
