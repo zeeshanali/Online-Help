@@ -1,6 +1,6 @@
 {
   "name": "intel-help-docs",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "The IML GUI help docs",
   "publishConfig": {
     "registry": "https://ubit-artifactory-or.intel.com/artifactory/api/npm/iml-npm-local"
