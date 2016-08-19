@@ -2,8 +2,6 @@
   "name": "intel-help-docs",
   "version": "1.0.3",
   "description": "The IML GUI help docs",
-  "main": "index.js",
-  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git@github.intel.com:IML/help-docs.git"
