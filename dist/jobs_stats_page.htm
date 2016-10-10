@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+﻿<!DOCTYPE HTML>
 <html>
 <head>
    <title>Jobs Stats</title>
@@ -7,7 +7,7 @@
    <meta name="keywords" content="" />
    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
    <meta http-equiv="content-language" content="en-us" />
-   <meta name="description" content="The job statistics feature is accessible from the Read/Write Heat Map chart and for a given OST and time interval, displays the read and write throughput for the top five jobs..." />
+   <meta name="description" content="Job statistics information is accessible from the Read/Write Heat Map chart. Simply click on an OST cell on the chart, and for that OST and time interval, a window opens that..." />
    <meta http-equiv="Content-Style-Type" content="text/css" />
    <link type="text/css" href="default.css" rel="stylesheet" />
    <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
@@ -154,7 +154,9 @@ window.onunload = function() {doc.title = $("<div/>").html("Intel® Manager for 
 <div id="unclicker"></div>
 
 <!--ZOOMRESTART-->
-<p>The job statistics feature is accessible from the Read/Write Heat Map chart and for a given OST and time interval, displays the read and write throughput for the top five jobs for that OST. The window also shows the top five read IOPS and write IOPS for that OST and time interval. This feature supports the creation of plug-ins to display user account, command line, job size, and job start/finish times. The Jobs Stats window is available for any dashboard window that has a Heat Map: These are the File Systems dashboard windows and the Servers dashboard window. </p>
+<p class="p_BodyText">Job statistics information is accessible from the Read/Write Heat Map chart. Simply click on an OST cell on the chart, and for that OST and time interval, a window opens that shows metrics for the top ten jobs for that OST. Current metrics include average, min, and max for read and write bandwidth and read and write IOPS per the time interval. Because this information is specific to a time period, it is static. </p>
+<p class="p_BodyText">The Jobs Stats window is available for any dashboard window that has a heat map: These are the File Systems dashboard windows and the Servers dashboard window. This feature also supports the creation of plug-ins to display user account, command line, job size, and job start/finish times. </p>
+<p class="p_BodyText">For statistics regarding the top ten jobs for all active file systems, click<span style="font-weight: bold;"> Job Stats</span> at the top menu bar. This view updates in real time, showing a top-like interface of current jobs. Durations and sort-order are customizable.</p>
 
 <!--ZOOMSTOP-->
 
