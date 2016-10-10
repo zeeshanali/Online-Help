@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+﻿<!DOCTYPE HTML>
 <html>
 <head>
    <title>Mount the Lustre file system</title>
@@ -42,7 +42,7 @@ var hmHeaderTopic = true;
 // General topic variables
 var tVars = {
    hmHelpPage: "index.html",
-   nextP: "monitoring_a_file_system.htm",
+   nextP: "full_file_system_mounts.htm",
    prevP: "view_the_file_system.htm",
    currP: "mounting_file_system_clients.htm",
    defP: "intel_manager_for_lustre.htm",
@@ -155,9 +155,9 @@ window.onunload = function() {doc.title = $("<div/>").html("Intel® Manager for 
 
 <!--ZOOMRESTART-->
 <p class="p_BodyText"><span class="f_BodyText">A compute client must mount the Lustre* file system to be able to access data in the file system. Before attempting to mount the file system on your Lustre clients, make sure the Intel® Enterprise Edition for Lustre* client software has been installed on each client. For instructions, see the documentation provided by your storage solution provider. </span></p>
-<p class="p_BodyText"><span class="f_BodyText">To obtain the command to use to mount your file system:</span></p>
-<p style="text-align: left; text-indent: 0px; line-height: 1.32; padding: 0px 0px 0px 20px; margin: 0px 0px 8px 14px;"><span style="font-size:12pt; font-family: 'Calibri';color:#000000;display:inline-block;width:20px;margin-left:-20px">1.</span><span class="f_BodyText">At the Dashboard menu bar, click the </span><span class="f_BodyText" style="font-weight: bold;">Configuration</span><span class="f_BodyText"> drop-down menu and click </span><span class="f_BodyText" style="font-weight: bold;">File Systems</span><span class="f_BodyText">.</span></p><p style="text-align: left; text-indent: 0px; line-height: 1.32; padding: 0px 0px 0px 20px; margin: 0px 0px 8px 14px;"><span style="font-size:12pt; font-family: 'Calibri';color:#000000;display:inline-block;width:20px;margin-left:-20px">2.</span><span class="f_BodyText">Each Lustre file system created using Intel® Manager for Lustre is listed. Select the file system to be mounted. A window opens showing information for that file system.</span></p><p style="text-align: left; text-indent: 0px; line-height: 1.32; padding: 0px 0px 0px 20px; margin: 0px 0px 8px 14px;"><span style="font-size:12pt; font-family: 'Calibri';color:#000000;display:inline-block;width:20px;margin-left:-20px">3.</span><span class="f_BodyText">On the file system window, click </span><span class="f_BodyText" style="font-weight: bold;">View Client Mount Information</span><span class="f_BodyText">. The mount command to be used to mount the file system is displayed. Following is an example only:</span><br />
-<span class="f_BodyText">mount -t lustre 10.214.13.245@tcp0:/test /mnt/test</span></p><p style="text-align: left; text-indent: 0px; line-height: 1.32; padding: 0px 0px 0px 20px; margin: 0px 0px 8px 14px;"><span style="font-size:12pt; font-family: 'Calibri';color:#000000;display:inline-block;width:20px;margin-left:-20px">4.</span><span class="f_BodyText">On the client server, enter the actual command.</span></p>
+<p class="p_BodyText"><span class="f_BodyText">A client can mount the entire file system, or mount a file system sub-directory.</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 8px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="border:none;border-spacing:0px;padding:0px;line-height: 1.10;"><tr valign="baseline" style="vertical-align:baseline"><td style="border:none;width:13px"><span style="font-size:12pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;">&#8226;</span></td><td style="border:none"><span class="f_BodyText"><a href="full_file_system_mounts.htm" class="topiclink">Mount the entire file system</a></span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 8px 0px;"><table border="0" cellpadding="0" cellspacing="0" style="border:none;border-spacing:0px;padding:0px;line-height: 1.10;"><tr valign="baseline" style="vertical-align:baseline"><td style="border:none;width:13px"><span style="font-size:12pt; font-family: 'Arial Unicode MS','Lucida Sans Unicode','Arial';color:#000000;">&#8226;</span></td><td style="border:none"><span class="f_BodyText"><a href="mount_a_file_system_sub-direct.htm" class="topiclink">Mount a file system sub-directory</a></span></td></tr></table></div><p class="p_BodyText"><span class="f_BodyText">&nbsp;</span></p>
+
 <!--ZOOMSTOP-->
 
 </div> <!-- idcontent -->

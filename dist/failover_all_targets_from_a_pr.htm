@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+﻿<!DOCTYPE HTML>
 <html>
 <head>
    <title>Failover all targets from a primary to a secondary server</title>
@@ -7,7 +7,7 @@
    <meta name="keywords" content="" />
    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
    <meta http-equiv="content-language" content="en-us" />
-   <meta name="description" content="Warning: After you have created a Lustre file system using Intel® Manager for Lustre software, you should not make any configuration changes outside of Intel® Manager for..." />
+   <meta name="description" content="Warning: After you have created a Lustre* file system using Intel® Manager for Lustre* software, you should not normally make any configuration changes outside of Intel®..." />
    <meta http-equiv="Content-Style-Type" content="text/css" />
    <link type="text/css" href="default.css" rel="stylesheet" />
    <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
@@ -49,11 +49,11 @@ var tVars = {
    mailUrl: "",
    mailUrlQuery: "",
    titleP: "Failover all targets from a primary to a secondary server",
-   mailsubject: "Feedback on: Intel® Manager for Lustre* software - Failover all targets from a primary to a secondary server",
-   sharesubject: "Intel® Manager for Lustre* software - Failover all targets from a primary to a secondary server",
+   mailsubject: "Feedback on: Intel® Manager for Lustre* software - Intentionally failover of all targets from a primary to a secondary server",
+   sharesubject: "Intel® Manager for Lustre* software - Intentionally failover of all targets from a primary to a secondary server",
    simplesubject: "Documentation%20Feedback",
    mailid: "Failover_all_targets_from_a_pr",
-   mailpath: "Performing maintenance for HA file systems &gt; Failover all targets from a primary to a secondary server /",
+   mailpath: "Managing and Maintaining HA Lustre file systems &gt; Failover all targets from a primary to a secondary server /",
    mailbody: "Dear Support Staff,",
    fbtype: false,
    header: true,
@@ -141,7 +141,7 @@ window.onunload = function() {doc.title = $("<div/>").html("Intel® Manager for 
 <div id="hmheader">
 <div id="hmheadercontents">
  
-<h1 class="p_Heading1"><span class="f_Heading1">Failover all targets from a primary to a secondary server</span></h1>
+<h1 class="p_Heading1"><span class="f_Heading1">Intentionally failover of all targets from a primary to a secondary server</span></h1>
 
 </div>
 <div id="atocIcon" class="navdivs">
@@ -154,9 +154,11 @@ window.onunload = function() {doc.title = $("<div/>").html("Intel® Manager for 
 <div id="unclicker"></div>
 
 <!--ZOOMRESTART-->
-<p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;">Warning</span><span class="f_BodyText">: After you have created a Lustre file system using Intel® Manager for Lustre software, you should not make any configuration changes outside of Intel® Manager for Lustre software, to file system servers, their respective targets, or network connectivity. Doing so will likely defeat the ability of Intel® Manager for Lustre software to monitor or manage the file system, and will make all or portions of the file system unavailable to clients.</span></p>
+<p class="p_BodyText"><span class="f_BodyText" style="font-weight: bold;">Warning</span><span class="f_BodyText">: After you have created a Lustre* file system using Intel® Manager for Lustre* software, you should not normally make any configuration changes outside of Intel® Manager for Lustre* software, to file system servers, their respective targets, or network connectivity. Doing so will diminish or defeat the ability of Intel® Manager for Lustre* software to monitor or manage the file system, and will make all or portions of the file system unavailable to clients. </span></p>
+<p class="p_BodyText"><span class="f_BodyText">The following process is recommended only if the affected server has become unresponsive to commands and must be powered down or power cycled in order to perform recovery. This requires that you first failover all connected targets from the affected server to the secondary server.  </span></p>
+<p class="p_BodyText"><span class="f_BodyText">Under normal circumstances, where the server is otherwise responsive, use the method described in the previous section ( <a href="perform_a_manual_failback.htm" class="topiclink">Perform a single target failback from secondary to primary server</a> ) to failover the targets before removing power from the host.</span></p>
 <p class="p_BodyText"><span class="f_BodyText">To manually failover all targets from a primary to secondary server, perform these steps: </span></p>
-<p style="text-align: left; text-indent: 0px; line-height: 1.32; padding: 0px 0px 0px 20px; margin: 0px 0px 8px 12px;"><span style="font-size:12pt; font-family: 'Calibri';color:#000000;display:inline-block;width:20px;margin-left:-20px">1.</span><span class="f_BodyText">At the menu bar, click the </span><span class="f_BodyText" style="font-weight: bold;">Configuration</span><span class="f_BodyText"> drop-down menu and click </span><span class="f_BodyText" style="font-weight: bold;">Servers</span><span class="f_BodyText">.</span></p><p style="text-align: left; text-indent: 0px; line-height: 1.32; padding: 0px 0px 0px 32px; margin: 0px 0px 8px 0px;"><span style="font-size:12pt; font-family: 'Calibri';color:#000000;display:inline-block;width:20px;margin-left:-20px">2.</span><span class="f_BodyText">For the primary server on which you want to perform maintenance, click the </span><span class="f_BodyText" style="font-weight: bold;">Actions</span><span class="f_BodyText"> drop-down and select </span><span class="f_BodyText" style="font-weight: bold;">Power-Off</span><span class="f_BodyText">. This will switch power off for this server. Any targets running on the primary server will be failed-over to the secondary server. Non-HA-capable targets (targets not supported by a secondary server) will be unavailable until power for the server is switched on again. This action is visible only if PDUs have been added and outlets assigned to servers.</span></p>
+<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 8px 12px;"><table border="0" cellpadding="0" cellspacing="0" style="border:none;border-spacing:0px;padding:0px;line-height: 1.10;"><tr valign="baseline" style="vertical-align:baseline"><td style="border:none;width:18px"><span style="font-size:12pt; font-family: 'Calibri';color:#000000;">1.</span></td><td style="border:none"><span class="f_BodyText">At the menu bar, click the </span><span class="f_BodyText" style="font-weight: bold;">Configuration</span><span class="f_BodyText"> drop-down menu and click </span><span class="f_BodyText" style="font-weight: bold;">Servers</span><span class="f_BodyText">.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 8px 12px;"><table border="0" cellpadding="0" cellspacing="0" style="border:none;border-spacing:0px;padding:0px;line-height: 1.10;"><tr valign="baseline" style="vertical-align:baseline"><td style="border:none;width:18px"><span style="font-size:12pt; font-family: 'Calibri';color:#000000;">2.</span></td><td style="border:none"><span class="f_BodyText">For the primary server on which you want to perform maintenance, click the </span><span class="f_BodyText" style="font-weight: bold;">Actions</span><span class="f_BodyText"> drop-down and select </span><span class="f_BodyText" style="font-weight: bold;">Power-Off</span><span class="f_BodyText">. Note that this action is visible only if PDUs have been added and outlets assigned to servers. This action will switch power off for this server. Any targets running on the primary server will be failed-over to the secondary server. Non-HA-capable targets (targets not supported by a secondary server) will be unavailable until power for the server is switched on again. </span></td></tr></table></div>
 <!--ZOOMSTOP-->
 
 </div> <!-- idcontent -->
