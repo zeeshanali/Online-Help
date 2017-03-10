@@ -1,13 +1,13 @@
 ﻿<!DOCTYPE HTML>
 <html>
 <head>
-   <title>Mount the entire file system</title>
+   <title>Removing an unwanted server profile</title>
    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
    <meta name="generator" content="Help &amp; Manual" />
    <meta name="keywords" content="" />
    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
    <meta http-equiv="content-language" content="en-us" />
-   <meta name="description" content="To obtain the command to use to mount an entire file system:" />
+   <meta name="description" content="You may want to remove a custom server profile that is no longer needed. Enter the following commands at the command line interface. Dollar sign prompts have been removed to..." />
    <meta http-equiv="Content-Style-Type" content="text/css" />
    <link type="text/css" href="default.css" rel="stylesheet" />
    <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
@@ -42,18 +42,18 @@ var hmHeaderTopic = true;
 // General topic variables
 var tVars = {
    hmHelpPage: "index.html",
-   nextP: "mount_a_file_system_sub-direct.htm",
-   prevP: "mounting_file_system_clients.htm",
-   currP: "full_file_system_mounts.htm",
+   nextP: "configuring_hierarchical_stora.htm",
+   prevP: "decommissioning_a_server_for_a.htm",
+   currP: "removing_an_unwanted_server_pr.htm",
    defP: "intel_manager_for_lustre.htm",
    mailUrl: "",
    mailUrlQuery: "",
-   titleP: "Mount the entire file system",
-   mailsubject: "Feedback on: Intel® Manager for Lustre* software - Mount the entire file system",
-   sharesubject: "Intel® Manager for Lustre* software - Mount the entire file system",
+   titleP: "Removing an unwanted server profile",
+   mailsubject: "Feedback on: Intel® Manager for Lustre* software - Removing an unwanted server profile",
+   sharesubject: "Intel® Manager for Lustre* software - Removing an unwanted server profile",
    simplesubject: "Documentation%20Feedback",
-   mailid: "Full_file_system_mounts",
-   mailpath: "Creating a new Lustre* file system &gt; Mount the Lustre file system &gt; Mount the entire file system /",
+   mailid: "Removing_an_unwanted_server_pr",
+   mailpath: "Managing and Maintaining HA Lustre file systems &gt; Removing an unwanted server profile /",
    mailbody: "Dear Support Staff,",
    fbtype: false,
    header: true,
@@ -110,7 +110,7 @@ $(document).ready(function() {
 var doc = document;  
 try {
 if (parent.hmWebHelp.navWidth != null) doc = parent.document;
-doc.title = $("<div/>").html("Intel® Manager for Lustre* software - Mount the entire file system").text();
+doc.title = $("<div/>").html("Intel® Manager for Lustre* software - Removing an unwanted server profile").text();
 window.onunload = function() {doc.title = $("<div/>").html("Intel® Manager for Lustre* software").text();}
 } catch(err) {}
 });
@@ -122,7 +122,7 @@ window.onunload = function() {doc.title = $("<div/>").html("Intel® Manager for 
 <script type="text/javascript" src="hmtopic.js"></script>
 
    <script type="text/javascript">
-     HMSyncTOC("index.html", "full_file_system_mounts.htm");
+     HMSyncTOC("index.html", "removing_an_unwanted_server_pr.htm");
    </script>
    <script type="text/javascript" src="highlight.js"></script>
    <script type="text/javascript">
@@ -135,13 +135,13 @@ window.onunload = function() {doc.title = $("<div/>").html("Intel® Manager for 
 
 
 <ul id="topictabs" class="tabs">
-<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>Mount the entire file system</span></a></li>
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>Removing an unwanted server profile</span></a></li>
 </ul>
 <div id="hmbox">
 <div id="hmheader">
 <div id="hmheadercontents">
  
-<h1 class="p_Heading1"><span class="f_Heading1">Mount the entire file system</span></h1>
+<h1 class="p_Heading1"><span class="f_Heading1">Removing an unwanted server profile</span></h1>
 
 </div>
 <div id="atocIcon" class="navdivs">
@@ -154,9 +154,15 @@ window.onunload = function() {doc.title = $("<div/>").html("Intel® Manager for 
 <div id="unclicker"></div>
 
 <!--ZOOMRESTART-->
-<p class="p_BodyText"><span class="f_BodyText">To obtain the command to use to mount an entire file system:</span></p>
-<div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 8px 14px;"><table border="0" cellpadding="0" cellspacing="0" style="border:none;border-spacing:0px;padding:0px;line-height: 1.10;"><tr valign="baseline" style="vertical-align:baseline"><td style="border:none;width:22px"><span style="font-size:12pt; font-family: 'Calibri';color:#000000;">1.</span></td><td style="border:none"><span class="f_BodyText">At the Dashboard menu bar, click the </span><span class="f_BodyText" style="font-weight: bold;">Configuration</span><span class="f_BodyText"> drop-down menu and click </span><span class="f_BodyText" style="font-weight: bold;">File Systems</span><span class="f_BodyText">.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 8px 14px;"><table border="0" cellpadding="0" cellspacing="0" style="border:none;border-spacing:0px;padding:0px;line-height: 1.10;"><tr valign="baseline" style="vertical-align:baseline"><td style="border:none;width:22px"><span style="font-size:12pt; font-family: 'Calibri';color:#000000;">2.</span></td><td style="border:none"><span class="f_BodyText">Each Lustre file system created using Intel® Manager for Lustre* is listed. Select the file system to be mounted. A window opens showing information for that file system.</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 8px 14px;"><table border="0" cellpadding="0" cellspacing="0" style="border:none;border-spacing:0px;padding:0px;line-height: 1.10;"><tr valign="baseline" style="vertical-align:baseline"><td style="border:none;width:22px"><span style="font-size:12pt; font-family: 'Calibri';color:#000000;">3.</span></td><td style="border:none"><span class="f_BodyText">On the file system window, click </span><span class="f_BodyText" style="font-weight: bold;">View Client Mount Information</span><span class="f_BodyText">. The mount command to be used to mount the file system is displayed. Following is an example only:</span><br />
-<span class="f_BodyText">mount -t lustre 10.214.13.245@tcp0:/test /mnt/test</span></td></tr></table></div><div style="text-align: left; text-indent: 0px; padding: 0px 0px 0px 0px; margin: 0px 0px 8px 14px;"><table border="0" cellpadding="0" cellspacing="0" style="border:none;border-spacing:0px;padding:0px;line-height: 1.10;"><tr valign="baseline" style="vertical-align:baseline"><td style="border:none;width:22px"><span style="font-size:12pt; font-family: 'Calibri';color:#000000;">4.</span></td><td style="border:none"><span class="f_BodyText">On the client server, enter the actual command.</span></td></tr></table></div>
+<p>You may want to remove a custom server profile that is no longer needed. Enter the following commands at the command line interface. Dollar sign prompts have been removed to allow copying and pasting.</p>
+<p>&nbsp;</p>
+<p class="p_CodeExample"><span class="f_CodeExample">chroma-config&nbsp;stop</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">chroma&nbsp;server_profile&nbsp;list&nbsp;&nbsp;#&nbsp;Pick&nbsp;up&nbsp;the&nbsp;profile&nbsp;name&nbsp;you&nbsp;want&nbsp;to&nbsp;remove</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">chroma-config&nbsp;profile&nbsp;delete&nbsp;&lt;profile&nbsp;name&gt;</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">chroma&nbsp;server&nbsp;profile&nbsp;list&nbsp;&nbsp;#&nbsp;Verify&nbsp;profile&nbsp;is&nbsp;now&nbsp;removed</span></p>
+<p class="p_CodeExample"><span class="f_CodeExample">chroma-config&nbsp;start</span></p>
+<p>&nbsp;</p>
+
 <!--ZOOMSTOP-->
 
 </div> <!-- idcontent -->

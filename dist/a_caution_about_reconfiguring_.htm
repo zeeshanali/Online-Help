@@ -1,13 +1,13 @@
 ﻿<!DOCTYPE HTML>
 <html>
 <head>
-   <title>Important Information about reconfiguring your file system</title>
+   <title>IMPORTANT INFORMATION about reconfiguring your file system</title>
    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
    <meta name="generator" content="Help &amp; Manual" />
    <meta name="keywords" content="" />
    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
    <meta http-equiv="content-language" content="en-us" />
-   <meta name="description" content="Caution: After you have created a Lustre file system using Intel® Manager for Lustre* software, you should NOT make any configuration changes to file system servers or their..." />
+   <meta name="description" content="Caution: When initially setting up your storage system, take care in selecting block device names because these cannot be changed after the file system has been created using ..." />
    <meta http-equiv="Content-Style-Type" content="text/css" />
    <link type="text/css" href="default.css" rel="stylesheet" />
    <link id="tabscheme" type="text/css" href="hm_topic.css" rel="stylesheet" />   
@@ -43,17 +43,17 @@ var hmHeaderTopic = true;
 var tVars = {
    hmHelpPage: "index.html",
    nextP: "ha_and_failover_support_provid_2.htm",
-   prevP: "creating_a_file_system2.htm",
+   prevP: "pre-requisites_to_creating_a_l.htm",
    currP: "a_caution_about_reconfiguring_.htm",
    defP: "intel_manager_for_lustre.htm",
    mailUrl: "",
    mailUrlQuery: "",
-   titleP: "Important Information about reconfiguring your file system",
-   mailsubject: "Feedback on: Intel® Manager for Lustre* software - Important Information about reconfiguring your file system",
-   sharesubject: "Intel® Manager for Lustre* software - Important Information about reconfiguring your file system",
+   titleP: "IMPORTANT INFORMATION about reconfiguring your file system",
+   mailsubject: "Feedback on: Intel® Manager for Lustre* software - IMPORTANT INFORMATION about reconfiguring your file system",
+   sharesubject: "Intel® Manager for Lustre* software - IMPORTANT INFORMATION about reconfiguring your file system",
    simplesubject: "Documentation%20Feedback",
    mailid: "A_caution_about_reconfiguring_",
-   mailpath: "Creating a new Lustre* file system &gt; Important Information about reconfiguring your file system /",
+   mailpath: "Creating a new Lustre* file system &gt; IMPORTANT INFORMATION about reconfiguring your file system /",
    mailbody: "Dear Support Staff,",
    fbtype: false,
    header: true,
@@ -110,7 +110,7 @@ $(document).ready(function() {
 var doc = document;  
 try {
 if (parent.hmWebHelp.navWidth != null) doc = parent.document;
-doc.title = $("<div/>").html("Intel® Manager for Lustre* software - Important Information about reconfiguring your file system").text();
+doc.title = $("<div/>").html("Intel® Manager for Lustre* software - IMPORTANT INFORMATION about reconfiguring your file system").text();
 window.onunload = function() {doc.title = $("<div/>").html("Intel® Manager for Lustre* software").text();}
 } catch(err) {}
 });
@@ -135,13 +135,13 @@ window.onunload = function() {doc.title = $("<div/>").html("Intel® Manager for 
 
 
 <ul id="topictabs" class="tabs">
-<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>Important Information about reconfiguring your file system</span></a></li>
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>IMPORTANT INFORMATION about reconfiguring your file system</span></a></li>
 </ul>
 <div id="hmbox">
 <div id="hmheader">
 <div id="hmheadercontents">
  
-<h1 class="p_Heading1"><span class="f_Heading1">Important Information about reconfiguring your file system</span></h1>
+<h1 class="p_Heading1"><span class="f_Heading1">IMPORTANT INFORMATION about reconfiguring your file system</span></h1>
 
 </div>
 <div id="atocIcon" class="navdivs">
@@ -154,7 +154,7 @@ window.onunload = function() {doc.title = $("<div/>").html("Intel® Manager for 
 <div id="unclicker"></div>
 
 <!--ZOOMRESTART-->
-<p><span style="font-weight: bold;">Caution: </span>After you have created a Lustre file system using Intel® Manager for Lustre* software, <span style="font-weight: bold;">you should NOT make any configuration changes to file system servers or their respective targets outside of Intel® Manager for Lustre* software</span>. Doing so will defeat the ability of Intel® Manager for Lustre* software to monitor the file system, and will make the file system unavailable to clients.</p>
+<p><span class="f_BodyText" style="font-weight: bold;">Caution</span><span class="f_BodyText">: When initially setting up your storage system, take care in selecting block device names because these cannot be changed after the file system has been created using &nbsp;Intel® Manager for Lustre* software. </span><span class="f_BodyText" style="font-weight: bold;">You should NOT make configuration changes to file system servers or their respective volumes/targets outside of Intel® Manager for Lustre* software</span><span class="f_BodyText">. </span><span class="f_BodyText">Doing so will defeat the ability of Intel® Manager for Lustre* software to monitor or manage the file system, and will make the file system unavailable to clients.</span><span class="f_BodyText" style="font-weight: bold;"> </span><span class="f_BodyText">Re-labeling these device names during multipath configuration will break the HA configuration established by Intel® Manager for Lustre* software.</span></p>
 <p>&nbsp;</p>
 <p><span style="font-weight: bold;">Caution</span>: A known issue can result in a server being made unavailable. This can happen if the server has been added to a Lustre file system, (using Intel® Manager for Lustre* software) and then the user decides to Force Remove the server from the file system. The Force Remove command should only be performed if the Remove command has been unsuccessful. Force Remove will remove the server from the Intel® Manager for Lustre* configuration, but not remove Intel® Manager for Lustre* software from the server. All targets that depend on the server will also be removed without any attempt to unconfigure them. To completely remove the Intel® Manager for Lustre* software from the server (allowing it to be added to another Lustre file system), first contact technical support.</p>
 
