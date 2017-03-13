@@ -1,7 +1,7 @@
 ﻿<!DOCTYPE HTML>
 <html>
 <head>
-   <title>Prerequisites to creating an HA Lustre file system</title>
+   <title>IMPORTANT PREREQUISITES to creating an HA Lustre file system</title>
    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
    <meta name="generator" content="Help &amp; Manual" />
    <meta name="keywords" content="" />
@@ -42,18 +42,18 @@ var hmHeaderTopic = true;
 // General topic variables
 var tVars = {
    hmHelpPage: "index.html",
-   nextP: "configure_storage_servers.htm",
-   prevP: "ha_and_failover_support_provid_2.htm",
+   nextP: "a_caution_about_reconfiguring_.htm",
+   prevP: "creating_a_file_system2.htm",
    currP: "pre-requisites_to_creating_a_l.htm",
    defP: "intel_manager_for_lustre.htm",
    mailUrl: "",
    mailUrlQuery: "",
-   titleP: "Prerequisites to creating an HA Lustre file system",
-   mailsubject: "Feedback on: Intel® Manager for Lustre* software - Prerequisites to creating an HA Lustre file system",
-   sharesubject: "Intel® Manager for Lustre* software - Prerequisites to creating an HA Lustre file system",
+   titleP: "IMPORTANT PREREQUISITES to creating an HA Lustre file system",
+   mailsubject: "Feedback on: Intel® Manager for Lustre* software - IMPORTANT PREREQUISITES to creating an HA Lustre file system",
+   sharesubject: "Intel® Manager for Lustre* software - IMPORTANT PREREQUISITES to creating an HA Lustre file system",
    simplesubject: "Documentation%20Feedback",
    mailid: "Pre-requisites_to_creating_a_L",
-   mailpath: "Creating a new Lustre* file system &gt; Prerequisites to creating an HA Lustre file system /",
+   mailpath: "Creating a new Lustre* file system &gt; IMPORTANT PREREQUISITES to creating an HA Lustre file system /",
    mailbody: "Dear Support Staff,",
    fbtype: false,
    header: true,
@@ -110,7 +110,7 @@ $(document).ready(function() {
 var doc = document;  
 try {
 if (parent.hmWebHelp.navWidth != null) doc = parent.document;
-doc.title = $("<div/>").html("Intel® Manager for Lustre* software - Prerequisites to creating an HA Lustre file system").text();
+doc.title = $("<div/>").html("Intel® Manager for Lustre* software - IMPORTANT PREREQUISITES to creating an HA Lustre file system").text();
 window.onunload = function() {doc.title = $("<div/>").html("Intel® Manager for Lustre* software").text();}
 } catch(err) {}
 });
@@ -135,13 +135,13 @@ window.onunload = function() {doc.title = $("<div/>").html("Intel® Manager for 
 
 
 <ul id="topictabs" class="tabs">
-<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>Prerequisites to creating an HA Lustre file system</span></a></li>
+<li id="indextab" class="hmtabs"><a href="#" id="indextablink" class="current"><span>IMPORTANT PREREQUISITES to creating an HA Lustre file system</span></a></li>
 </ul>
 <div id="hmbox">
 <div id="hmheader">
 <div id="hmheadercontents">
  
-<h1 class="p_Heading1"><span class="f_Heading1">Prerequisites to creating an HA Lustre file system</span></h1>
+<h1 class="p_Heading1"><span class="f_Heading1">IMPORTANT PREREQUISITES to creating an HA Lustre file system</span></h1>
 
 </div>
 <div id="atocIcon" class="navdivs">
@@ -154,9 +154,10 @@ window.onunload = function() {doc.title = $("<div/>").html("Intel® Manager for 
 <div id="unclicker"></div>
 
 <!--ZOOMRESTART-->
-<p><span class="f_BodyText">A high-availability Lustre file system managed by Intel® Manager for Lustre* software requires that your entire storage system configuration and all &nbsp;interfaces comply with a pre-defined configuration. </span>Intel Manager for Lustre* software performs Lnet configuration assuming that each server is connected to a high-performance data network, which is the Lustre network Lnet. <span class="f_BodyText">See the </span><span class="f_BodyText" style="font-style: italic;">High Availability Configuration Specification</span><span class="f_BodyText"> in the </span><span class="f_BodyText" style="font-style: italic;">Intel® Enterprise Edition for Lustre* Software Installation Guide</span><span class="f_BodyText"> for detailed information. </span></p>
+<p><span class="f_BodyText">A high-availability Lustre file system managed by Intel® Manager for Lustre* software requires that your entire storage system configuration and all &nbsp;interfaces comply with a pre-defined configuration. Intel®</span> Manager for Lustre* software performs LNet configuration assuming that each server is connected to a high-performance data network, which is the Lustre network LNet.  <span class="f_BodyText">For detailed information, see the section </span><span class="f_BodyText" style="font-style: italic;">High Availability Configuration Specification</span><span class="f_BodyText"> in the </span><span class="f_BodyText" style="font-style: italic;">Intel® Enterprise Edition for Lustre* Software Installation Guide. </span><span class="f_BodyText">Also see the guide </span><span class="f_BodyText" style="font-style: italic;">Lustre* Installation and Configuration using Intel® EE for Lustre* Software and OpenZFS.</span></p>
 <p>&nbsp;</p>
-<p><span class="f_BodyText" style="font-weight: bold;">Caution</span><span class="f_BodyText">: After you have created a Lustre file system using Intel® Manager for Lustre* software,</span><span class="f_BodyText" style="font-weight: bold;"> you should NOT make configuration changes to file system servers or their respective targets outside of Intel® Manager for Lustre* software</span><span class="f_BodyText">. </span><span class="f_BodyText"> Doing so will defeat the ability of Intel® Manager for Lustre* software to monitor or manage the file system, and will make the file system unavailable to clients.</span><span class="f_BodyText" style="font-weight: bold;"> </span></p>
+<p><span class="f_BodyText" style="font-weight: bold;">Caution</span><span class="f_BodyText">: When initially setting up your storage system, take care in selecting block device names because these cannot be changed after the file system has been created using &nbsp;Intel® Manager for Lustre* software. </span><span class="f_BodyText" style="font-weight: bold;">You should NOT make configuration changes to file system servers or their respective volumes/targets outside of Intel® Manager for Lustre* software</span><span class="f_BodyText">. </span><span class="f_BodyText">Doing so will defeat the ability of Intel® Manager for Lustre* software to monitor or manage the file system, and will make the file system unavailable to clients.</span><span class="f_BodyText" style="font-weight: bold;"> </span><span class="f_BodyText">Re-labeling these device names during multipath configuration will break the HA configuration established by Intel® Manager for Lustre* software.</span></p>
+<p>&nbsp;</p>
 
 <!--ZOOMSTOP-->
 
