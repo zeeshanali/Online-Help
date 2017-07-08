@@ -160,9 +160,8 @@ The job stats code extracts the job identifier from an environment variable set 
 ```
 $ lctl conf_param testfs.sys.jobid_var=<environment variable>
 ```
-where ```
-<environment variable>
-```
+where `<environment variable>`
+
  is one of the following:
 
 |Job Scheduler|Environment Variable|
