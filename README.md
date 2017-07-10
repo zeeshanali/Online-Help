@@ -2,7 +2,7 @@
 
 ### Table of Contents
 
-- [Intoduction](docs/Introduction_1_0.md)
+- [Introduction](docs/Introduction_1_0.md)
 - [Getting Started](docs/Getting_started_2_0.md)
 - [Creating a new Lustre* file system](docs/Creating_new_lustre_fs_3_0.md)
 - [Monitoring Lustre* file systems](docs/Monitoring_lustre_fs_4_0.md)
