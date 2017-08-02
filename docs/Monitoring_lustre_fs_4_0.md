@@ -138,9 +138,10 @@ Job statistics are available from two locations:
 
 1. Before viewing job statistics, you will need to run a command to enable this feature. Run this command for each file system. The following command is an example, to run on the management server (MGS):
 
-	lctl conf_param <test1>.sys.jobid_var=procname_uid
-	
-	where <test1> is the file system name (refer to Using jobstats with other job schedulers for more information.
+```
+    lctl conf_param <test1>.sys.jobid_var=procname_uid
+```	
+	where `<test1>` is the file system name (refer to Using jobstats with other job schedulers for more information.
 1. The variable testfs.mdt.job_cleanup_interval sets the period after which collected statistics are cleared out. If this interval is to short, statistics may get cleared while you're viewing job statistics. Set this interval to a value greater than your collection/viewing period. As an example, you could set this interval to 70 minutes (4200 seconds) using the following command:
 ```
     lctl conf_param testfs.mdt.job_cleanup_interval=4200
