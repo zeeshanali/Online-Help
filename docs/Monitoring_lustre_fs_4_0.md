@@ -140,12 +140,15 @@ Job statistics are available from two locations:
 
 ```
     lctl conf_param <test1>.sys.jobid_var=procname_uid
-```	
-	where `<test1>` is the file system name (refer to Using jobstats with other job schedulers for more information.
+```
+
+where `<test1>` is the file system name (refer to Using jobstats with other job schedulers for more information.
 1. The variable testfs.mdt.job_cleanup_interval sets the period after which collected statistics are cleared out. If this interval is to short, statistics may get cleared while you're viewing job statistics. Set this interval to a value greater than your collection/viewing period. As an example, you could set this interval to 70 minutes (4200 seconds) using the following command:
+
 ```
     lctl conf_param testfs.mdt.job_cleanup_interval=4200
 ```
+
 1. View the Read/Write Heat Map chart on the dashboard window. 
 1. Each row on the Read/Write Heat Map corresponds to an OST, with consecutive columns from left-to-right, corresponding to consecutive time intervals. Mouse over a cell to find an OST and time interval of interest, and click on the desired cell.
 
