@@ -1,18 +1,19 @@
-[**Intel® Manager for Lustre\* Online Help Main Table of Contents**](../README.md)
-# <a id="9.0"></a>Graphical User Interface
+[**Manager for Lustre\* Online Help Main Table of Contents**](../README.md)
 
-This section details the Intel® Manager for Lustre* graphical user interface.  Click the desired topic.
+<a id="9.0"></a>
+# Graphical User Interface
 
-- <a href="#9.1">Dashboard window</a>
-- <a href="#9.2">Dashboard charts</a>
-- <a href="#9.3">Configuration menu</a>
-- <a href="#9.4">Job stats</a>
-- <a href="#9.5">Logs window</a>
-- <a href="#9.6">Status window</a>
-- <a href="#9.7">Alert bar</a>
-- <a href="#9.8">Resources tree view</a>
-- <a href="#9.9">Breadcrumb navigation</a>
+This section details the Manager for Lustre\* graphical user interface.  Click the desired topic.
 
+- [Dashboard window](#9.1)
+- [Dashboard charts](#9.2)
+- [Configuration menu](#9.3)
+- [Job stats](#9.4)
+- [Logs window](#9.5)
+- [Status window](#9.6)
+- [Resources tree view](#9.7)
+- [Breadcrumb navigation](#9.8)
+- [Alert bar](#9.9)
 
 ## <a id="9.1"></a>Dashboard window
 
@@ -21,14 +22,14 @@ The Dashboard window is shown next.
 <a id="f9.1"></a>
 ![md_Graphics/dashboard.png][f9.1]
 
-The Dashboard displays a set of charts that provide usage and performance data at several levels for each file system. At the top level, this window displays an aggregate view of all file systems you're currently monitoring. You can select to monitor individual file systems and servers by clicking Configure Dashboard; See <a href="#9.1.2">Configuring the Dashboard</a>.
+The Dashboard displays a set of charts that provide usage and performance data at several levels for each file system. At the top level, this window displays an aggregate view of all file systems you're currently monitoring. You can select to monitor individual file systems and servers by clicking **Configure Dashboard**; See [Configuring the Dashboard](#9.1.2).
 
-To view charts for OSTs and MST(s), select the specific file system. Then select the desired target(s).
+To view charts for OSTs and MDT(s), select the specific file system. Then select the desired target(s).
 
 At the top, the Dashboard lists the file system(s) being managed or monitored-only. The following information is provided for each file system:
 
 - *File System name*: The name assigned to this file system during its creation on the Configuration window.
-- *Type*: Monitored or Managed. "Managed" file systems are configured and managed for high availability (HA). Managed file systems are both monitored and managed, whereas "monitored" file systems are monitored-only and do not support failover via Intel® Manager for Lustre* software.
+- *Type*: Monitored or Managed. "Managed" file systems are configured and managed for high availability (HA). Managed file systems are both monitored and managed, whereas "monitored" file systems are monitored-only and do not support failover via Manager for Lustre\* software.
 - S*pace Used / Total*: This indicates the amount of file system capacity consumed, versus the total file system capacity. 
 - *Files Used / Total*: This indicates the total number of inodes consumed by file creation versus the total number of inodes established for this file system.
 - Clients: Indicates the number of clients accessing the file system at this moment.
@@ -65,40 +66,40 @@ By default, the Dashboard displays information and charts for all file systems. 
 
 Click **Update** to apply your choices and **Cancel** to close.
 
-<a href="#9.0">Top of page</a>
+[Top of page](#9.0)
 
 ## <a id="9.2"></a>Dashboard charts
 
-Several Dashboard charts provide quick, detailed, visual representation of the performance of your Lustre file system(s).  You can configure certain data display parameters for each chart, and your chart configuration will persist until you reload/refresh the Dashboard page, using the browser. 
+Several Dashboard charts provide quick, detailed, visual representation of the performance of your Lustre* file system(s).  You can configure certain data display parameters for each chart, and your chart configuration will persist until you reload/refresh the Dashboard page, using the browser. 
 
 Charts are presented as:
 
-- <a href="#9.2a">File system charts</a>
-- <a href="#9.2b">Server charts</a>
-- <a href="#9.2c">MDT charts</a>
-- <a href="#9.2d">OST charts</a>
+- [File system charts](#9.2a)
+- [Server charts](#9.2b)
+- [MDT charts](#9.2c)
+- [OST charts](#9.2d)
 
-<a href="#9.0">Top of page</a>
+[Top of page](#9.0)
 
 **<a id="9.2a"></a>File system charts**
 
 The Dashboard window displays the following six charts for one or more file systems:
 
-- <a href="#9.2.1">Read/Write Heat Map</a>
-- <a href="#9.2.2">OST Balance</a>
-- <a href="#9.2.3">Metadata Operations</a>
-- <a href="#9.2.4">Read/Write Bandwidth</a>
-- <a href="#9.2.6">Object Storage Servers</a>
+- [Read/Write Heat Map](#9.2.1)
+- [OST Balance](#9.2.2)
+- [Metadata Operations](#9.2.3)
+- [Read/Write Bandwidth](#9.2.4)
+- [Object Storage Servers](#9.2.6)
 
 
 
-**<a id="9.2a"></a>Server charts**
+**<a id="9.2b"></a>Server charts**
 
 The Dashboard displays the following three charts for an individual server (MDS or OSS). To access, click **Configure Dashboard**. Then select **Servers** and select the desired server. 
 
-- <a href="#9.2.4">Read/Write Bandwidth</a>
-- <a href="#9.2.7">CPU Usage</a>
-- <a href="#9.2.8">Memory Usage</a>
+- [Read/Write Bandwidth](#9.2.4)
+- [CPU Usage](#9.2.7)
+- [Memory Usage](#9.2.8)
 
 
 
@@ -106,9 +107,9 @@ The Dashboard displays the following three charts for an individual server (MDS 
 
 The Dashboard window displays the following three charts for the selected MDT. To access, click **Configure Dashboard**. Then select the specific file system. Lastly, select the desired MDT.
 
-- <a href="#9.2.3">Metadata Operations</a>
-- <a href="#9.2.9">Space Usage</a>
-- <a href="#9.2.810">File Usage</a>
+- [Metadata Operations](#9.2.3)
+- [Space Usage](#9.2.9)
+- [File Usage](#9.2.10)
 
 
 
@@ -116,9 +117,9 @@ The Dashboard window displays the following three charts for the selected MDT. T
 
 The OST Dashboard window displays the following three charts for the selected OST. To access, click Configure Dashboard. Then select the specific file system. Lastly, select the desired OST.
 
-- <a href="#9.2.4">Read/Write Bandwidth</a>
-- <a href="#9.2.9">Space Usage</a>
-- <a href="#9.2.11">Object Usage</a>
+- [Read/Write Bandwidth](#9.2.4)
+- [Space Usage](#9.2.9)
+- [Object Usage](#9.2.11)
 
 
 ### <a id="9.2.1"></a>Read/Write Heat Map chart
@@ -135,7 +136,7 @@ Because of the way that activity information is averaged, the heat map may show 
 **Features**
 
 - Mouse over any cell on the heat map to learn which OST this is, its file system, its read or write activity, and the actual starting date and time of that measurement period. 
-- Click on a specific heat map cell to open the Job Stats window (job statistics) for that OST and read/write measurement. See [View job statistics](Monitoring_lustre_fs_4_0.md/#4.0). 
+- Click on a specific heat map cell to open the Job Stats window (job statistics) for that OST and read/write measurement. See [View job statistics](Monitoring_lustre_fs_4_0_0.md/#4.3). 
 - To better view larger numbers of OSTs, for example, more than forty OSTs, click Full Screen to expand the map. 
 
 **View this chart for a specific file system**
@@ -229,7 +230,7 @@ To view this chart for a single MDT:
 **Configure the Metadata Operations chart**
 
 1. Click **Configure**.
-1. Click **Set Duration** and enter at time period over which samples will be taken. Enter Minutes (1-60), Hours (1-24), Days (1- 31), or Weeks (1-4). Note that for long durations, the chart will be divided over several days, with samples periods starting at different times of the day. The value given is an average for that sample period. 
+1. Click **Set Duration** and enter a time period over which samples will be taken. Enter Minutes (1-60), Hours (1-24), Days (1- 31), or Weeks (1-4). Note that for long durations, the chart will be divided over several days, with sample periods starting at different times of the day. The value given is an average for that sample period. 
 1. Click **Set Range** to set the **Start** and **End** times and dates over which measurements will be displayed. This  view of the chart is a static snapshot, starting and ending as configured.  
 1. Click **Update** to apply and close this window.  
 
@@ -246,7 +247,7 @@ Depending on the view selected, the chart notation and display adjusts to occupy
 **Features**
 
 - Mouse over any point on the chart to learn the date/time of this measurement and the read and write values at that time.
-- Click **Change Duration** to set the total time duration to Minutes (1-60), Hours (1-24), Days (1- 31), or Weeks (1-4).  Note that for long durations, the map will be divided over several days, with samples periods starting at different times of the day.
+- Click **Change Duration** to set the total time duration to Minutes (1-60), Hours (1-24), Days (1- 31), or Weeks (1-4).  Note that for long durations, the map will be divided over several days, with sample periods starting at different times of the day.
 - Click **Full Screen** to fill the browser window with this chart. Click **Exit Full Screen** to return to the normal view.
 - Click **Read** or **Write** to view only read or write information on the chart.
 
@@ -262,15 +263,15 @@ This chart is displayed by default for all file systems. To view this chart for 
 
 To view this chart for a single OST:
 
-1. On the Dashboard, click Configure Dashboard.
+1. On the Dashboard, click **Configure Dashboard**.
 1. Select Server.
 1. At the Server drop-down menu, select the server hosting the desired target.
-1. At the Target drop-down menu, select the desired OST. Then click Update.
+1. At the Target drop-down menu, select the desired OST. Then click **Update**.
 
 **Configure the Read/Write Bandwidth chart**
 
 1. Click **Configure**.
-1. Click **Set Duration** and enter at time period over which samples will be taken. Enter Minutes (1-60), Hours (1-24), Days (1- 31), or Weeks (1-4). Note that for long durations, the map will be divided over several days, with samples periods starting at different times of the day. The value given is an average for that sample period. 
+1. Click **Set Duration** and enter a time period over which samples will be taken. Enter Minutes (1-60), Hours (1-24), Days (1- 31), or Weeks (1-4). Note that for long durations, the map will be divided over several days, with sample periods starting at different times of the day. The value given is an average for that sample period. 
 1. Click **Set Range** to set the **Start** and **End** times and dates over which measurements will be displayed. This  view of the chart is a static snapshot, starting and ending as configured. 
 1. Click **Update** to apply and close this window.
 
@@ -284,7 +285,7 @@ This chart shows the percentage of CPU and RAM resources consumed on all metadat
 **Features**
 
 - Mouse over any point on the chart to learn the date/time of this measurement and the values at that time.
-- Click **Change Duration** to set the total time duration to Minutes (1-60), Hours (1-24), Days (1- 31), or Weeks (1-4). Note that for long durations, the map will be divided over several days, with samples periods starting at different times of the day. The value given is an average for that sample period. 
+- Click **Change Duration** to set the total time duration to Minutes (1-60), Hours (1-24), Days (1- 31), or Weeks (1-4). Note that for long durations, the map will be divided over several days, with sample periods starting at different times of the day. The value given is an average for that sample period. 
 - Click **Full Screen** to fill the browser window with this chart. Click **Exit Full Screen** to return to the normal view.
 - Click **CPU** or **RAM** to select/deselect to view only that information on the chart.
 
@@ -299,7 +300,7 @@ This chart is displayed by default for all file systems. To view this chart for 
 **Configure the Metadata Servers chart**
 
 1. Click **Configure**.
-1. Click **Set Duration** and enter at time period over which samples will be taken. Enter Minutes (1-60), Hours (1-24), Days (1- 31), or Weeks (1-4). Note that for long durations, the map will be divided over several days, with samples periods starting at different times of the day. The value given is an average for that sample period. 
+1. Click **Set Duration** and enter a time period over which samples will be taken. Enter Minutes (1-60), Hours (1-24), Days (1- 31), or Weeks (1-4). Note that for long durations, the map will be divided over several days, with sample periods starting at different times of the day. The value given is an average for that sample period. 
 1. Click **Set Range** to set the **Start** and **End** times and dates over which measurements will be displayed. This  view of the chart is a static snapshot, starting and ending as configured. 
 1. Click **Update** to apply and close this window.
 
@@ -312,7 +313,7 @@ The Object Storage Servers chart shows the percentages of CPU and RAM resources 
 
 **Features**
 
-- Click **Change Duration** to set the total time duration to Minutes (1-60), Hours (1-24), Days (1- 31), or Weeks (1-4).  Note that for long durations, the map will be divided over several days, with samples periods starting at different times of the day. The value given is an average for that sample period. 
+- Click **Change Duration** to set the total time duration to Minutes (1-60), Hours (1-24), Days (1- 31), or Weeks (1-4).  Note that for long durations, the map will be divided over several days, with sample periods starting at different times of the day. The value given is an average for that sample period. 
 - Click **Full Screen** to fill the browser window with this chart. Click **Exit Full Screen** to return to the normal view.
 - Click **CPU** or **RAM** to select/deselect to view only that information on the chart.
 
@@ -327,7 +328,7 @@ This chart is displayed by default for all file systems. To view this chart for 
 **Configure the Object Storage Servers chart**
 
 1. Click **Configure**.
-1. Click **Set Duration** and enter at time period over which samples will be taken. Enter Minutes (1-60), Hours (1-24), Days (1- 31), or Weeks (1-4). Note that for long durations, the map will be divided over several days, with samples periods starting at different times of the day. The value given is an average for that sample period. 
+1. Click **Set Duration** and enter a time period over which samples will be taken. Enter Minutes (1-60), Hours (1-24), Days (1- 31), or Weeks (1-4). Note that for long durations, the map will be divided over several days, with sample periods starting at different times of the day. The value given is an average for that sample period. 
 1. Click **Set Range** to set the **Start** and **End** times and dates over which measurements will be displayed. This  view of the chart is a static snapshot, starting and ending as configured. 
 1. Click **Update** to apply and close this window.
 
@@ -346,7 +347,7 @@ Data is displayed for the specific metadata server or object storage server sele
 
 
 - Mouse over any point on the chart to learn the date/time of this measurement and the values at that time.
-- Click **Full Screen** to fill the browser window with this chart. Click **Exit Full Scree**n to return to the normal view.
+- Click **Full Screen** to fill the browser window with this chart. Click **Exit Full Screen** to return to the normal view.
 - Click **user**, **system**, or **iowait** to select/deselect to view only that information on the chart. 
 
 **View this chart**
@@ -358,7 +359,7 @@ Data is displayed for the specific metadata server or object storage server sele
 **Configure the CPU Usage chart**
 
 1. Click **Configure**.
-1. Click **Set Duration** and enter at time period over which samples will be taken. Enter Minutes (1-60), Hours (1-24), Days (1- 31), or Weeks (1-4). Note that for long durations, the map will be divided over several days, with samples periods starting at different times of the day. The value given is an average for that sample period. 
+1. Click **Set Duration** and enter a time period over which samples will be taken. Enter Minutes (1-60), Hours (1-24), Days (1- 31), or Weeks (1-4). Note that for long durations, the map will be divided over several days, with sample periods starting at different times of the day. The value given is an average for that sample period. 
 1. Click **Set Range** to set the Start and End times and dates over which measurements will be displayed. This  view of the chart is a static snapshot, starting and ending as configured. 
 1. Click **Update** to apply and close this window.
 
@@ -379,7 +380,7 @@ Data is displayed for the server selected, over time.
 **Features**
 
 - Mouse over any point on the chart to learn the date/time of this measurement and the values at that time.
-- Click **Change Duration** to set the total time duration to Minutes (1-60), Hours (1-24), Days (1- 31), or Weeks (1-4). Note that for long durations, the map will be divided over several days, with samples periods starting at different times of the day.
+- Click **Change Duration** to set the total time duration to Minutes (1-60), Hours (1-24), Days (1- 31), or Weeks (1-4). Note that for long durations, the map will be divided over several days, with sample periods starting at different times of the day.
 - Click **Full Screen** to fill the browser window with this chart. Click **Exit Full Screen** to return to the normal view.
 - Click any of the display icons: **Total memory**, **Used memory**, **Total swap**, **Used swap** to display only your selected parameters. 
 
@@ -392,7 +393,7 @@ Data is displayed for the server selected, over time.
 **Configure the Memory Usage chart**
 
 1. Click **Configure**.
-1. Click **Set Duration** and enter at time period over which samples will be taken. Enter Minutes (1-60), Hours (1-24), Days (1- 31), or Weeks (1-4). Note that for long durations, the map will be divided over several days, with samples periods starting at different times of the day. The value given is an average for that sample period. 
+1. Click **Set Duration** and enter a time period over which samples will be taken. Enter Minutes (1-60), Hours (1-24), Days (1- 31), or Weeks (1-4). Note that for long durations, the map will be divided over several days, with sample periods starting at different times of the day. The value given is an average for that sample period. 
 1. Click **Set Range** to set the **Start** and **End** times and dates over which measurements will be displayed. This view of the chart is a static snapshot, starting and ending as configured. 
 1. Click **Update** to apply and close this window.
 
@@ -407,7 +408,7 @@ This chart is displayed for a selected MDT or OST and shows percentage of file s
 **Features**
 
 - Mouse over any point on the chart to learn the date/time of this measurement and the values at that time.
-- Click **Change Duration** to set the total time duration to Minutes (1-60), Hours (1-24), Days (1- 31), or Weeks (1-4).  Note that for long durations, the map will be divided over several days, with samples periods starting at different times of the day.
+- Click **Change Duration** to set the total time duration to Minutes (1-60), Hours (1-24), Days (1- 31), or Weeks (1-4).  Note that for long durations, the map will be divided over several days, with sample periods starting at different times of the day.
 - Click **Full Screen** to fill the browser window with this chart. Click **Exit Full Screen** to return to the normal view.
 
 **View this chart**
@@ -420,7 +421,7 @@ This chart is displayed for a selected MDT or OST and shows percentage of file s
 **Configure the Space Usage chart**
 
 1. Click **Configure**.
-1. Click **Set Duration** and enter at time period over which samples will be taken. Enter Minutes (1-60), Hours (1-24), Days (1- 31), or Weeks (1-4). Note that for long durations, the map will be divided over several days, with samples periods starting at different times of the day. The value given is an average for that sample period. 
+1. Click **Set Duration** and enter a time period over which samples will be taken. Enter Minutes (1-60), Hours (1-24), Days (1- 31), or Weeks (1-4). Note that for long durations, the map will be divided over several days, with sample periods starting at different times of the day. The value given is an average for that sample period. 
 1. Click **Set Range** to set the **Start** and **End** times and dates over which measurements will be displayed. This  view of the chart is a static snapshot, starting and ending as configured. 
 1. Click **Update** to apply and close this window.
 
@@ -433,7 +434,7 @@ This chart is displayed for a selected MDT and shows the percentage of available
 **Features**
 
 - Mouse over any point on the chart to learn the date/time of this measurement and the values at that time.
-- Click **Change Duration** to set the total time duration to Minutes (1-60), Hours (1-24), Days (1- 31), or Weeks (1-4).  Note that for long durations, the map will be divided over several days, with samples periods starting at different times of the day.
+- Click **Change Duration** to set the total time duration to Minutes (1-60), Hours (1-24), Days (1- 31), or Weeks (1-4).  Note that for long durations, the map will be divided over several days, with sample periods starting at different times of the day.
 - Click **Full Screen** to fill the browser window with this chart. Click **Exit Full Screen** to return to the normal view.
 
 **View this chart**
@@ -446,7 +447,7 @@ This chart is displayed for a selected MDT and shows the percentage of available
 **Configure the File Usage chart**
 
 1. Click **Configure**.
-1. Click **Set Duration** and enter at time period over which samples will be taken. Enter Minutes (1-60), Hours (1-24), Days (1- 31), or Weeks (1-4). Note that for long durations, the map will be divided over several days, with samples periods starting at different times of the day. The value given is an average for that sample period. 
+1. Click **Set Duration** and enter a time period over which samples will be taken. Enter Minutes (1-60), Hours (1-24), Days (1- 31), or Weeks (1-4). Note that for long durations, the map will be divided over several days, with sample periods starting at different times of the day. The value given is an average for that sample period. 
 1. Click **Set Range** to set the **Start** and **End** times and dates over which measurements will be displayed. This  view of the chart is a static snapshot, starting and ending as configured. 
 1. Click **Update** to apply and close this window.
 
@@ -466,30 +467,30 @@ This chart is displayed for a selected OST and shows the percentage of metadata 
 **Configure the Object Usage chart**
 
 1. Click **Configure**.
-1. Click **Set Duration** and enter at time period over which samples will be taken. Enter Minutes (1-60), Hours (1-24), Days (1- 31), or Weeks (1-4). Note that for long durations, the map will be divided over several days, with samples periods starting at different times of the day. The value given is an average for that sample period. 
+1. Click **Set Duration** and enter a time period over which samples will be taken. Enter Minutes (1-60), Hours (1-24), Days (1- 31), or Weeks (1-4). Note that for long durations, the map will be divided over several days, with sample periods starting at different times of the day. The value given is an average for that sample period. 
 1. Click **Set Range** to set the **Start** and **End** times and dates over which measurements will be displayed. This  view of the chart is a static snapshot, starting and ending as configured. 
 1. Click **Update** to apply and close this window.
 
-<a href="#9.0">Top of page</a>
+[Top of page](#9.0)
 
 
 ## <a id="9.3"></a>Configuration menu
 
 The Configuration menu provides access to the following windows, to let you create and manage file systems:
 
-- The <a href="#9.3.1">Server window</a> lets you configure a new server for a new file system or add a server to an existing file system.
-- At the <a href="#9.3.2">Power Control window</a>, you can configure power distribution units and outlets, and assign servers to PDU outlets to support high availability/failover. 
-- At the <a href="#9.3.3">File Systems window</a>, you can create a new file system or manage a file system. 
-- The <a href="#9.3.4">HSM window</a> configure and monitor hierarchical storage management (HSM) activities. You can also add a copytool to a worker agent and assign that tool instance to a file system.
-- The <a href="#9.3.5">Storage window</a> lists detected storage module plug-ins (provided by third parties), which may provide configuration, status, and/or failover control of RAID based storage devices, depending entirely on the plug-in.
-- At the <a href="#9.3.6">Users window</a>, add and configure superusers and users. Superusers are administrators.
-- Add volumes and configure those volumes for high availability at the <a href="#9.3.7">Volumes window</a>.
-- The <a href="#9.3.8">MGTs window</a> lets you configure the management target.
+- The [Server window](#9.3.1) lets you configure a new server for a new file system or add a server to an existing file system.
+- At the [Power Control window](#9.3.2), you can configure power distribution units and outlets, and assign servers to PDU outlets to support high availability/failover. 
+- At the [File Systems window](#9.3.3), you can create a new file system or manage a file system. 
+- The [HSM window](#9.3.4) configure and monitor hierarchical storage management (HSM) activities. You can also add a copytool to a worker agent and assign that tool instance to a file system.
+- The [Storage window](#9.3.5) lists detected storage module plug-ins (provided by third parties), which may provide configuration, status, and/or failover control of RAID based storage devices, depending entirely on the plug-in.
+- At the [Users window](#9.3.6), add and configure superusers and users. Superusers are administrators.
+- Add volumes and configure those volumes for high availability at the [Volumes window](#9.3.7).
+- The [MGTs window](#9.3.8) lets you configure the management target.
 
 
 ### <a id="9.3.1"></a>Server Configuration window
 
-The Server Configuration window is shown next. This is an example only configuration only.
+The Server Configuration window is shown next. This is an example configuration only.
 ![md_Graphics/config_servers.png][f9.15]
 
 This window supports the range of server configuration tasks. For instructions on how to add servers, see [Add one or more HA servers](Creating_new_lustre_fs_3_0.md/#3.4). 
@@ -498,30 +499,29 @@ Under Server Configuration, you can:
 
 - Add an object storage server. Click **+ Add Server** or **+ Add More Servers**.
 - View existing servers for all file systems.
-- View **Server State**: This indicator tells you the alert status for that server. A green check mark indicates that all is well with that server. A red exclamation mark indicates an active alert has been generated for this server; you can mouse over the exclamation mark to learn the cause of the alert. See <a href="#9.3.4">View all status messages</a> for more information. 
+- View **Server State**: This indicator tells you the alert status for that server. A green check mark indicates that all is well with that server. A red exclamation mark indicates an active alert has been generated for this server; you can mouse over the exclamation mark to learn the cause of the alert. See [View all status messages](#9.6a) for more information. 
 - View the **Profile** associated with each server. When you add a new server, you select the server profile for that server. The profile defines the role of that server. There are generally four server profiles available, however your installation may list more. The four common server profiles are:
     - *Managed storage server*
     - *Monitored storage server*
     - *POSIX HSM Agent Node*
     - *Robinhood Policy Engine server*
 - Determine **LNet state** for a given server. Possible LNet states are: *LNet up*, *LNet down*, and *LNet unloaded*. 
-- Click on the server name (hostname) to open a <a href="#9.3.1.1">Server Detail window</a> to learn more about that server and access configuration options.
+- Click on the server name (hostname) to open a [Server Detail window](#9.3.1.1) to learn more about that server and access configuration options.
 - Under **Actions**, specific to each server, you can perform the following commands. These commands are used primarily to decommission servers. See [Decommissioning a server for an MGT, MDT, or OST](Manage_maintain_HA_lustre_fs_5_0.md/#5.13).
-    - **Reboot**: Initiate a reboot on this server. If this server is configured as the primary server of an HA pair, the file system will failover to the secondary server until this server is back online. The file system will then fail back to the primary server. If this is not configured as an HA server, then any file systems targets that rely on this server will be unavailable until rebooting is complete.
-    - **Shutdown**: Initiate an orderly shutdown on this server. If this server is configured as the primary server of an HA pair, the file system will failover to the secondary server. If this is not configured as an HA server, then any file systems targets that rely on this server will be unavailable until this server is rebooted.
-    - **Remove**: Remove this server. If this server is configured as the primary server of an HA pair, then the file system will failover to the secondary server.
+    - **Reboot**: Initiate a reboot on this server. If this server is configured as the primary server of an HA pair, the file system will failover to the secondary server until this server is back online. The file system will then fail back to the primary server. If this is not configured as an HA server, then any file systems or targets that rely on this server will be unavailable until rebooting is complete.
+    - **Shutdown**: Initiate an orderly shutdown on this server. If this server is configured as the primary server of an HA pair, the file system will failover to the secondary server. If this is not configured as an HA server, then any file systems or targets that rely on this server will be unavailable until this server is rebooted.
     - **Warning**: If this is not configured as an HA server, then any file systems or targets that rely on this server will also be removed.
     - **Power Off**: Switch power off for this server. Any HA-capable targets running on the server will be failed-over to a peer. Non-HA-capable targets will be unavailable until power for the server is switched on again. This action is visible only if PDUs have been added and outlets assigned to servers. 
     - **Power On**: Switch power on for this server. This action is visible only if PDUs have been added and outlets assigned to servers, and after the server has been powered-off at PDU. 
-    - **Power Cycle**: Switch power off and then back on again for this server Any HA-capable targets running on the server will be failed over to a peer. Non-HA-capable targets will be unavailable until the server has finished booting. This action is visible only if PDUs have been added and outlets assigned to servers.
-    - **Remove**: Remove this server. If this server is configured as the primary server of an HA pair, then the file system will failover to the secondary server. If this not configured as an HA server, then any file systems or targets that rely on this server will also be removed.
+    - **Power Cycle**: Switch power off and then back on again for this server. Any HA-capable targets running on the server will be failed over to a peer. Non-HA-capable targets will be unavailable until the server has finished booting. This action is visible only if PDUs have been added and outlets assigned to servers.
+    - **Remove**: Remove this server. If this server is configured as the primary server of an HA pair, then the file system will failover to the secondary server. If it is not configured as an HA server, then any file systems or targets that rely on this server will also be removed.
     - **Force Remove**: This action removes the record for the storage server in the manager database, without attempting to contact the storage server. All targets that depend on this server will also be removed without any attempt to unconfigure them. **Warning: You should only perform this action if the server is permanently unavailable**.
 
 Under **Server Actions**, you can perform the commands listed next. Note that these commands are *bulk action commands*. This means that when you click one of the following commands, you can then select which server(s) to perform this command on. You can enter a host name or host name expression in the file to generate a list of existing servers. You can choose **Select All**, **Select None**, or **Invert Selection**. At the far right, under *Select Server*, you can also select or deselect a server. After selecting the desired server(s), you can proceed to perform the command and it will be run on all selected servers. 
 
 - **Detect File Systems**: Detect an existing file system to be monitored at the manager GUI.
-- **Re-write Target Configuration**: Update each target with the current NID for the server with which it is associated. This is necessary after making changes to server/target configurations and is done after rescanning NIDs. Also see [Handling network address changes<](Manage_maintain_HA_lustre_fs_5_0.md/#5.9) (updating NIDs).
-- **Install Updates**: When an updated release of Intel® Manager for Lustre* software is installed at the *manager* server, a notification is displayed at the manager GUI that updated software is also available for installation on a managed server or servers. This button become enabled. After clicking the **Install Updates** button, a list of servers (default: all) to be included in this update operation is displayed in the Update dialog. Clicking the **Run** button in this dialog will cause the updated packages to be installed on the managed servers.
+- **Re-write Target Configuration**: Update each target with the current NID for the server with which it is associated. This is necessary after making changes to server/target configurations and is done after rescanning NIDs. Also see [Handling network address changes](Manage_maintain_HA_lustre_fs_5_0.md/#5.9) (updating NIDs).
+- **Install Updates**: When an updated release of Manager for Lustre\* software is installed on the *manager* server, a notification is displayed in the manager GUI indicating that updated software is also available for installation on a managed server or servers and the *Install Updates* button becomes enabled. After clicking the **Install Updates** button, a list of servers (default: all) to be included in this update operation is displayed in the Update dialog. Clicking the **Run** button in this dialog will cause the updated packages to be installed on the managed servers.
 
 
 
@@ -531,11 +531,11 @@ Each Server Detail window contains the full extent of information for that serve
 
 This window is divided into five sections: 
 
-- <a href="#9.3.1.1a">Server Detail</a>
-- <a href="#9.3.1.1b">Pacemaker configuration</a>
-- <a href="#9.3.1.1c">Corosync configuration</a>
-- <a href="#9.3.1.1d">LNet detail</a>
-- <a href="#9.3.1.1e">NID configuration</a>
+- [Server Detail](#9.3.1.1a)
+- [Pacemaker configuration](#9.3.1.1b)
+- [Corosync configuration](#9.3.1.1c)
+- [LNet detail](#9.3.1.1d)
+- [NID configuration](#9.3.1.1e)
 
 
 **<a id="9.3.1.1a"></a>Server Detail**
@@ -553,17 +553,17 @@ This section lists:
 
 Click the **Actions** menu to access the following commands that are available for this server:
 
-- **Reboot**: Initiate a reboot on this server. If this server is configured as the primary server of an HA pair, the file system will failover to the secondary server until this server is back online. The file system will then fail back to the primary server. If this is not configured as an HA server, then any file systems targets that rely on this server will be unavailable until rebooting is complete.
-- **Shutdown**: Initiate an orderly shutdown on this server. If this server is configured as the primary server of an HA pair, the file system will failover to the secondary server. If this is not configured as an HA server, then any file systems targets that rely on this server will be unavailable until this server is rebooted. Remove: Remove this server. If this server is configured as the primary server of an HA pair, then the file system will failover to the secondary server. Warning: If this is not configured as an HA server, then any file systems or targets that rely on this server will also be removed.
+- **Reboot**: Initiate a reboot on this server. If this server is configured as the primary server of an HA pair, the file system will failover to the secondary server until this server is back online. The file system will then fail back to the primary server. If this is not configured as an HA server, then any file systems or targets that rely on this server will be unavailable until rebooting is complete.
+- **Shutdown**: Initiate an orderly shutdown on this server. If this server is configured as the primary server of an HA pair, the file system will failover to the secondary server. If this is not configured as an HA server, then any file systems or targets that rely on this server will be unavailable until this server is rebooted. 
 - **Power Off**: This will switch power off for this server. If this is a primary server to any targets, those targets will be failed-over to the secondary server. Non-HA-capable targets (targets not supported by a secondary server) will be unavailable until power for the server is switched on again. This action is visible only if PDUs have been added and outlets assigned to servers.
-- **Power Cycle**: Switch power off and then back on again for this server Any HA-capable targets running on the server will be failed over to a peer. Non-HA-capable targets will be unavailable until the server has finished booting. This action is visible only if PDUs have been added and outlets assigned to servers.
-- **Remove**: Remove this server. If this server is configured as the primary server of an HA pair, then the file system will failover to the secondary server. If this not configured as an HA server, then any file systems or targets that rely on this server will also be removed.
+- **Power Cycle**: Switch power off and then back on again for this server. Any HA-capable targets running on the server will be failed over to a peer. Non-HA-capable targets will be unavailable until the server has finished booting. This action is visible only if PDUs have been added and outlets assigned to servers.
+- **Remove**: Remove this server. If this server is configured as the primary server of an HA pair, then the file system will failover to the secondary server. If it is not configured as an HA server, then any file systems or targets that rely on this server will also be removed.
 - **Force Remove**: This action removes the record for the storage server in the manager database, without attempting to contact the storage server. All targets that depend on this server will also be removed without any attempt to unconfigure them. Warning: You should only perform this action if the server is permanently unavailable.
 
 
-**<a id="9.3.1.1b"></a>Pacemaker configuration **
+**<a id="9.3.1.1b"></a>Pacemaker configuration**
 
-Pacemaker configuration and enabling is performed automatically by Intel® Manager for Lustre* software. However, an administrator may need to reset or configure Pacemaker when performing maintenance on a server, altering the server's configuration, or troubleshooting problems with Pacemaker.
+Pacemaker configuration and enabling is performed automatically by Manager for Lustre\* software. However, an administrator may need to reset or configure Pacemaker when performing maintenance on a server, altering the server's configuration, or troubleshooting problems with Pacemaker.
 
 Click the **Actions** menu to access the following commands:
 
@@ -575,7 +575,7 @@ Click the **Actions** menu to access the following commands:
 
 **<a id="9.3.1.1c"></a>Corosync configuration**
 
-Corosync configuration and enabling is performed automatically by Intel® Manager for Lustre* software. However, an administrator may need to reset or configure Corosync when performing maintenance on a server, altering the server's configuration, or troubleshooting problems with Corosync.
+Corosync configuration and enabling is performed automatically by Manager for Lustre\* software. However, an administrator may need to reset or configure Corosync when performing maintenance on a server, altering the server's configuration, or troubleshooting problems with Corosync.
 
 Click the **Actions** menu to access the following commands:
 
@@ -584,7 +584,7 @@ Click the **Actions** menu to access the following commands:
 - **Configure Corosync**: Visible if Corosync is unconfigured. This command will configure Corosync, but not start it. To configure and start Corosync, click **Start Corosync**. After Corosync is started, you need to start Pacemaker.  
 - **Start Corosync**: Visible if Corosync is stopped or unconfigured. After Corosync is started, you also need to start Pacemaker. If failover occurred from this server to the backup server, then after Corosync and Pacemaker are running, you need to manually failback the affected target(s) to this primary server. See Start Pacemaker, above.
 
-Clicking **Configure** to change the mcast port number.
+Click **Configure** to change the mcast port number.
 
 
 **<a id="9.3.1.1d"></a>LNet detail**
@@ -601,14 +601,14 @@ Click the **Actions** menu to access the following commands:
 
 **<a id="9.3.1.1e"></a>NID configuration**
 
-An administrator may need to reconfigure NIDs for a server when performing maintenance on a server, altering the server's configuration, or troubleshooting problems network interfaces. For each interface, you can set the network driver and assign the Lustre network. To be able to edit NID configuration, the file system first needs to taken offline. Perform these steps:
+An administrator may need to reconfigure NIDs for a server when performing maintenance on a server, altering the server's configuration, or troubleshooting problems with network interfaces. For each interface, you can set the network driver and assign the Lustre* network. To be able to edit NID configuration, the file system first needs to be taken offline. Perform these steps:
 
 1. At the menu bar, click **Configuration > File Systems**.
-1. For this listed file system, at the right under **Actions**, select **Stop**.
+1. For the listed file system, select **Stop** under *Actions*.
 1. Return to the Server Detail window for the server in question. Click **Configuration > Servers**. Click on the desired server.
 1. Under NID Configuration, click **Configure**.
 1. The IP address is not editable.  At the Network Driver drop-down menu, the available driver types are dependent on the network interface. Select the appropriate driver. 
-1. If you are ready to place the file system online again, click **Configuration > File Systems**. Then for this file system, under **Actions**, select **Start**.
+1. If you are ready to place the file system online again, click **Configuration > File Systems**. Then, for this file system, select **Start** under **Actions**.
 
 
 ### <a id="9.3.2"></a>Power Control window
@@ -616,7 +616,7 @@ An administrator may need to reconfigure NIDs for a server when performing maint
 The Power Control window accessed from the Configuration menu is shown next.
 ![md_Graphics/Power_Control_Tab.png][f9.16]
 
-The Power Control window lets you configure and manager power distribution units. At this window you can add a detected PDU and then assign specific PDU outlets to specific servers. Once configured, this feature lets you check the status of PDUs and individual outlets. Based on server power requirements and your failover configuration, you may want to assign more than one outlet to a server. For improved failover performance, assign the failover outlet from a different PDU than the primary outlet. When you associate PDU failover outlets with servers using this tool, STONITH is automatically configured. Note that primary and secondary servers for each target must first be configured on the Volumes window.
+The Power Control window lets you configure and manager power distribution units. In this window you can add a detected PDU and then assign specific PDU outlets to specific servers. Once configured, this feature lets you check the status of PDUs and individual outlets. Based on server power requirements and your failover configuration, you may want to assign more than one outlet to a server. For improved failover performance, assign the failover outlet from a different PDU than the primary outlet. When you associate PDU failover outlets with servers using this tool, STONITH is automatically configured. Note that primary and secondary servers for each target must first be configured on the Volumes window.
 
 See [Add power distribution units](Creating_new_lustre_fs_3_0.md/#3.6).
 
@@ -628,7 +628,7 @@ The *File Systems* window accessed from the *Configuration* menu is shown next.
 
 The *File Systems* window lets you configure, view and manage multiple file systems. 
 
-Click **Create File Syste**m (or **Create More File Systems**) to begin the process of creating a new file system. See [Create a new Lustre* file system](Creating_new_lustre_fs_3_0.md/#3.0).
+Click **Create File System** (or **Create More File Systems**) to begin the process of creating a new file system. See [Create a new Lustre* file system](Creating_new_lustre_fs_3_0.md/#3.0).
 
 Under Current File Systems, for each file system you can:
 
@@ -642,10 +642,10 @@ Under Current File Systems, for each file system you can:
 
 Under Actions, you can:
 
-- **Remove** the file system: This file system is removed and will not be available to clients. However this file system's contents will remain intact until its volumes are reused in another file system.
-- **Stop** the file system: This stops the metadata and object storage targets, thus making the file system unavailable to clients. If the file system has been stopped, to restart the file system, click **Start**.
+- **Remove** the file system: This file system is removed and will not be available to clients. However, the file system's contents will remain intact until its volumes are reused in another file system.
+- **Stop** the file system: This stops the metadata and object storage targets, thus making the file system unavailable to clients. If the file system has been stopped, click **Start** to restart the file system.
 
-To view the full display of file system parameters, click on the file system name in the left column. See [View All File System Parameters](Monitoring_lustre_fs_4_0.md/#4.4).
+To view the full display of file system parameters, click on the file system name in the left column. See [View All File System Parameters](Monitoring_lustre_fs_4_0_0.md/#4.4).
 
 
 ### <a id="9.3.4"></a>HSM window
@@ -659,18 +659,18 @@ On this window, you can:
 
 - Select to display copytool operations for all file systems (default), or one you select.
 - Mouse over the graph to learn the specific values at a given point in time.
-- Use Change Duration to change the time period for the range of data displayed on the HSM Copytool chart. chart. The chart begins at a start time set and ends now. You can set this to select Minutes, Hours, Days or Weeks, up to four weeks back in time and ending now. The most recent data displayed on the right. The number of data points will vary, based primarily on the duration.
+- Use Change Duration to change the time period for the range of data displayed on the HSM Copytool chart. The chart begins at a start time set and ends now. You can set this to select Minutes, Hours, Days or Weeks, up to four weeks back in time and ending now. The most recent data displayed on the right. The number of data points will vary, based primarily on the duration.
 - Click **Actions > Disable** to pause the HSM coordinator for this file system (pause HSM activities). New requests will be scheduled and HSM activities will resume after the HSM coordinator is enabled. To enable again, click **Actions > Enable**. 
 - Click **Actions > Shutdown** to stop the HSM coordinator for this file system. No new requests will be scheduled.
 
 If a copytool has been added but never configured or started, then click **Actions** to show the following menu:
 
 - **Start** - Configure and Start this copytool to begin processing HSM requests. 
-- **Remove** - Deconfigure and remove this copytool from the manager database. It will no longer appear on this HSM window. This is best way to remove a copytool.
+- **Remove** - Deconfigure and remove this copytool from the manager database. It will no longer appear on this HSM window. This is the best way to remove a copytool.
 - **Configure** - Configure this copytool on the worker. Do not start the copytool. Status will show as Configured.
 - **Force Remove** - Remove this copytool from the manager database without deconfiguring this copytool on the worker node. It will no longer appear on this HSM window. This is NOT the best way to remove a copytool, because a later attempt to add this copytool back will fail unless it is manually reconfigured. Only consider using Force Remove if Remove has failed. 
 
-To learn about HSM capabilities supported in Intel® Enterprise Edition for Lustre* software, see [Configuring and using Hierarchical Storage Management](Config_and_using_HSM_6_0.md/#6.0).
+To learn about HSM capabilities supported in Manager for Lustre* software, see [Configuring and using Hierarchical Storage Management](Config_and_using_HSM_6_0.md/#6.0).
 
 
 ### <a id="9.3.5"></a>Storage window
@@ -685,8 +685,8 @@ The *Users* window accessed from the *Configuration* menu is shown next.
 
 The *Users* window lets you create and manage the following accounts types:
 
-- **File system user** - A file system user has access to the full GUI, except for the Configuration drop-down menu, which is not displayed. A file system user cannot create or manage a file system, but can monitor all file systems using the Dashboard, and the Alerts and Logs windows. Users log in by clicking **Login** in the upper-right corner of the screen, and log out by clicking **Logout**. 
-- **Superuser** - A superuser has full access to the application, including the Configuration drop-down menu and all sub-menus. A superuser can create, monitor, manage, and remove file system and their components. A superuser create, modify (change passwords), and delete users. A superuser cannot delete their own account, but a superuser can create or delete another superuser.
+- **File system user** - A file system user has access to the full GUI, except for the Configuration drop-down menu, which is not displayed. A file system user cannot create or manage a file system, but can monitor all file systems using the Dashboard, Alerts, and Logs windows. Users log in by clicking **Login** in the upper-right corner of the screen, and log out by clicking **Logout**. 
+- **Superuser** - A superuser has full access to the application, including the Configuration drop-down menu and all sub-menus. A superuser can create, monitor, manage, and remove file systems and their components. A superuser can create, modify (change passwords), and delete users. A superuser cannot delete their own account, but a superuser can create or delete another superuser.
 
 See [Creating User Accounts](Getting_started_2_0.md/#2.1) for more information. 
 
@@ -704,11 +704,11 @@ See [Creating User Accounts](Getting_started_2_0.md/#2.1) for more information.
 The *Volumes* window accessed from the Configuration menu is shown next.
 ![md_Graphics/config_volumes.png][f9.21]
 
-The *Volumes* window is for adding volumes to a file system. Volumes (also called LUNs or block devices) are the underlying units of storage used to create Lustre* file systems. Each Lustre target corresponds to a single volume. Only volumes that are not already in use as Lustre targets or local file systems are shown. If servers in the volume have been configured for high availability, primary and secondary servers can be designated for a Lustre volume. A volume may be accessible on one or more servers via different device nodes, and it may be accessible via multiple device nodes on the same host.
+The *Volumes* window is used to add volumes to a file system. Volumes (also called LUNs or block devices) are the underlying units of storage used to create Lustre* file systems. Each Lustre* target corresponds to a single volume. Only volumes that are not already in use as Lustre* targets or local file systems are shown. If servers in the volume have been configured for high availability, primary and secondary servers can be designated for a Lustre* volume. A volume may be accessible on one or more servers via different device nodes, and it may be accessible via multiple device nodes on the same host.
 
 On the *Volume* window, you can do the following:
 
-- Set or change the Primary Server and Failover Server for each volume. Each change you select to make will be displayed in orange, indicating that you have selected to change this setting, but have not applied it yet. Changes you make on this Volumes Configuration window will be updated and displayed after clicking **Apply** and **Confirm**. After confirming the change, the orange setting turns white. Other users viewing this file system's Volume Configuration window will see these updated changes after you apply and confirm them. If you select to change a setting (it becomes orange), you can click **X** to cancel that selection (it turns white and returns to the original setting). To cancel all changes you have selected (but not yet applied), click **Cancel**.
+- Set or change the Primary Server and Failover Server for each volume. Each change you select to make will be displayed in orange, indicating that you have selected to change this setting, but have not applied it yet. Changes you make on the Volumes Configuration window will be updated and displayed after clicking **Apply** and **Confirm**. After confirming the change, the orange setting turns white. Other users viewing this file system's Volume Configuration window will see these updated changes after you apply and confirm them. If you select to change a setting (it becomes orange), you can click **X** to cancel that selection (it turns white and returns to the original setting). To cancel all changes you have selected (but not yet applied), click **Cancel**.
  
     **Note:** There is currently no lock-out of one user's changes versus changes made by another user. The most-recently applied setting is the one in-force and displayed.
 - View the status of all volumes in all file systems.
@@ -733,7 +733,7 @@ Under MGT Configuration for an existing MGT, you can perform these actions under
 - **Failover**: Clicking Failover will forcibly migrate the target to its failover server. Clients attempting to access data on the target while the migration is in process may experience delays until the migration completes. If this action is not displayed, then the MGT has already failed-over and this button will display as Failback. Otherwise, a secondary server has not been configured. 
 - **Failback**: Migrate the target back to its primary server. Clients attempting to access data on the target while the migration is in process may experience delays until the migration completes. This action is displayed only after a target has failed-over.
 
-<a href="#9.0">Top of page</a>
+[Top of page](#9.0)
 
 ## <a id="9.4"></a>Job Stats window
 
@@ -741,12 +741,12 @@ The Job Stats window is accessible at the top menu bar. Click **Job Stats**.
 
 Clicking **Job Stats** opens the Job Stats window and reveals the top five jobs currently in process. The listed jobs can be sorted by column and average duration can be selected. Column sorts and duration selections are persistent if you leave and later return to this window.
 
-**Note:** Job stats need to be enabled before then can be viewed. See [View Job stats](Monitoring_lustre_fs_4_0.md/#4.3).
+**Note:** Job stats need to be enabled before then can be viewed. See [View Job stats](Monitoring_lustre_fs_4_0_0.md/#4.3).
 ![md_Graphics/job_stats.png][f9.4]
 
-On the <a href="#9.2.1">Read/Write Heat Map</a> (on the Dashboard), you can also click a heat map cell and go to the Job Stats screen for that OST. Doing so will present a static view of job stats for the selected OST. Because it is static, *Duration* is not selectable.
+On the [Read/Write Heat Map](#9.2.1) (on the Dashboard), you can also click a heat map cell and go to the Job Stats screen for that OST. Doing so will present a static view of job stats for the selected OST. Because it is static, *Duration* is not selectable.
 
-<a href="#9.0">Top of page</a>
+[Top of page](#9.0)
 
 
 ## <a id="9.5"></a>Logs window
@@ -754,7 +754,7 @@ On the <a href="#9.2.1">Read/Write Heat Map</a> (on the Dashboard), you can also
 The *Logs* window is shown next.
 ![md_Graphics/logs.png][f9.23]
 
-The **Logs** window displays log information and allows filtering of events by date range, host, service, and messages from Lustre or all sources. The Logs window also features auto-complete search functions and linkable host names.
+The **Logs** window displays log information and allows filtering of events by date range, host, service, and messages from Lustre* or all sources. The Logs window also features auto-complete search functions and linkable host names.
 
 The logs window also features querying with auto-complete and linkable host names. 
 
@@ -767,7 +767,7 @@ For example, if a failover event takes place, the following occurs:
 
 Each of the above items generates a log message which is generated and displayed on the Logs window.
 
-<a href="#9.0">Top of page</a>
+[Top of page](#9.0)
 
 
 ## <a id="9.6"></a>Status window
@@ -783,10 +783,10 @@ The *Status* window shows current active and past alerts.
 
 Click **Status** to view all status messages. All messages are displayed most-recent first. Note that *warning* and *error* messages are displayed as alerts.  The Status window displays messages in five categories:
 
-- *Command Running*: These messages are gray in color and inform you of commands that are currently in progress, running. These are commands that you have entered at the manager GUI.
+- *Command Running*: These messages are gray in color and inform you of commands that are currently in progress / running. These are commands that you have entered into the manager GUI.
 - *Command Successful*: These messages are green in color and identify commands that have completed successfully. You can click **Details** and then click the command link to learn about underlying commands and their syntax. 
-- *Info messages*: These messages are displayed in blue. Events are normal transitions that occur during the creation or management of the file system, often in response to a command entered at the GUI. A single command may cause several events to occur. An event message informs you of an event occurring at a single point in time. 
-- *Warning alerts*: Warnings are displayed in orange. A warning usually indicates that the file system is operating in a degraded mode, for example a target has failed over so that high availability is no longer true for that target. A warning message marks a status change that has a specific **Begin** and **End** time. A warning is active at the beginning of the status change and inactive at the end of the status change. For example, a warning message may inform you that an OST has gone offline, and that message is active until the OST becomes operational again Not all warnings necessarily signify a degraded state; for example a target recovery to a failover server signifies that the failover occurred successfully. 
+- *Info messages*: These messages are displayed in blue. Events are normal transitions that occur during the creation or management of the file system, often in response to a command entered into the GUI. A single command may cause several events to occur. An event message informs you of an event occurring at a single point in time. 
+- *Warning alerts*: Warnings are displayed in orange. A warning usually indicates that the file system is operating in a degraded mode, for example a target has failed over so that high availability is no longer true for that target. A warning message marks a status change that has a specific **Begin** and **End** time. A warning is active at the beginning of the status change and inactive at the end of the status change. For example, a warning message may inform you that an OST has gone offline, and that message is active until the OST becomes operational again. Not all warnings necessarily signify a degraded state; for example a target recovery to a failover server signifies that the failover occurred successfully. 
 - *Errors alerts*: Errors are displayed in red. An error message indicates that the file system is down or severely degraded. One or more file system components are currently unavailable, for example both primary and secondary servers for a target are not running. An error often has a remedial action you can take by clicking the button.
 
 **Common Searches**
@@ -808,15 +808,15 @@ Note that the red Alert bar briefly appears on the GUI if there are any active e
 
 **Using the Search field**
 
-The Status window also incorporates an auto-complete search function.  Simply begin enter text into the search field to use this. 
+The Status window also incorporates an auto-complete search function.  Simply begin entering text into the search field to use this feature. 
 
 You can run searches using the following rules:
 
 1. Keywords can be filtered using the equals sign (=) or "in" keywords. Examples: 
-    - severity = ERROR
-    - severity in [WARNING, ERROR]
+    - `severity = ERROR`
+    - `severity in [WARNING, ERROR]`
 1. Filters can be joined using the "and" keyword. Example:
-    - severity = ERROR and active = true
+    - `severity = ERROR and active = true`
 
 The following table lists field names, associated types, and information about that field. 
 
@@ -833,7 +833,7 @@ record_type = CorosyncNoPeersAlert
 severity in [ERROR, WARNING]
 ```
 
-<a href="#9.0">Top of page</a>
+[Top of page](#9.0)
 
 ## <a id="9.7"></a>Resources tree view
 
@@ -843,7 +843,7 @@ The following image is a partial display of the Resources tree view.
 
 The Resources tree view is a tree listing of resources in the selected file system. It lists items in real time and lets you descend the file system hierarchy to the desired resource.  You can click a resource (file systems, servers, volumes, and targets) to view that resource in the tree, and click its metrics link to view that resource's metrics. This pane displays pages when many records are available. You can size this pane by dragging its edge drawer.
 
-<a href="#9.0">Top of page</a>
+[Top of page](#9.0)
 
 ## <a id="9.8"></a>Breadcrumb navigation
 
@@ -853,20 +853,21 @@ Navigating between pages is now tracked by breadcrumbs. The breadcrumb path is s
 
 ![f9.27]
 
-Breadcrumbs display a path shows you how you arrived at the current page. Breadcrumb navigation is reset when selecting a link from the Menu, or when selecting an item from the Resources tree view pane. 
+Breadcrumbs display a path, outlining the steps taken to arrive at the current page. Breadcrumb navigation is reset when selecting a link from the Menu, or when selecting an item from the Resources tree view pane. 
 
 If you create a cycle, the breadcrumbs will automatically slice up to the current location, preventing an unnecessary build-up of items. Another key feature of this feature is that it always has a starting point of reference. If you drill down to a target and then refresh the page, the target will now be the only item in the breadcrumb list, because the page will start at that location.
 
 If you click the Back button and the browser indicates that it is going to a previous page not in the breadcrumbs list, the new page will act as the starting breadcrumb location. This prevents a "reverse build-up" of breadcrumbs.
 
-<a href="#9.0">Top of page</a>
+[Top of page](#9.0)
 
 ## <a id="9.9"></a>Alert bar
 
-This red bar briefly appears if there are any active error or warning alerts on your system. Click Details to open the Status window and reveal the current, active alerts.
+This red bar briefly appears if there are any active error or warning alerts on your system. Click **Details** to open the Status window and reveal the current, active alerts.
 
 ![f9.25]
 
+[Top of page](#9.0)
 
 
 [f9.1]: md_Graphics/dashboard.png
