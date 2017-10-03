@@ -1,25 +1,25 @@
-[**Manager for Lustre\* 4.0.0 API Documentation**](./api_TOC.md)
+# <a name="1.0"></a> Packaging Guide for Intel® Manager for Lustre* software
 
-# <a name="1.0"></a> Packaging Guide for Manager for Lustre\* software
+[**Software API Documentation Table of Contents**](./api_TOC.md)
 
 Introduction
 ------------
 
-Manager for Lustre\* software is delivered as a single unified installer file, including
+Intel® Manager for Lustre* software is delivered as a single unified installer file, including
 both the central management component and the packages deployed to storage servers.  Because
 storage servers sometimes requires additional packages (such as drivers) or customized packages 
 (such as custom Lustre* builds), a mechanism is included whereby these packages can be included
-in a Manager for Lustre* software installation.
+in a Intel® Manager for Lustre* software installation.
 
 Bundles
 -------
 
 A bundle is comprised of a collection of RPM packages and metadata files.  The metadata
-in a bundle is comprised of a standard [yum](https://access.redhat.com/site/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Deployment_Guide/ch-yum.html) ``repodata`` directory containing information about
+in a bundle is comprised of a standard [yum](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/system_administrators_guide/ch-yum) ``repodata`` directory containing information about
 all the included packages, plus an additional [JSON](https://en.wikipedia.org/wiki/JSON) file named ``meta`` containing information about the
 bundle as a whole.
 
-- yum: [https://access.redhat.com/site/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Deployment_Guide/ch-yum.html](https://access.redhat.com/site/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Deployment_Guide/ch-yum.html)
+- yum: [https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/system_administrators_guide/ch-yum](https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/7/html/system_administrators_guide/ch-yum)
 - JSON: [https://en.wikipedia.org/wiki/JSON](https://en.wikipedia.org/wiki/JSON)
 
 
@@ -29,6 +29,7 @@ bundle as a whole.
     packageB-1.0.rpm
     repodata/
 ```
+
 
 
 The format of the ``meta`` file is as follows:
@@ -42,14 +43,14 @@ The format of the ``meta`` file is as follows:
 ```
 
 
-The ``name`` attribute serves as a unique identifier for a bundle within a Manager for Lustre*
+The ``name`` attribute serves as a unique identifier for a bundle within a Intel® Manager for Lustre* software
 installation.  It is wise to include the name of your organization in this string to reduce
 the likelihood of name collisions.
 
 The ``version`` attribute is provided to allow identification of a bundle by version.
 
 The `description` attribute is a human-readable description of the bundle.  This may be visible
-to system administrators of the Manager for Lustre* installation, so it should be something
+to system administrators of the Intel® Manager for Lustre* software installation, so it should be something
 meaningful to that audience.
 
 Creating a Bundle
@@ -63,7 +64,7 @@ Creating a Bundle
 6. Create an archive of your bundle with ``-bundle.tar.gz`` appended to the name of your bundle.  For example, ````tar czf acme_drivers-bundle.tar.gz *.rpm meta repodata````
 
 **Warning:**
-> Do not create bundles with the same name as the built-in bundles, as these will be overwritten by updates to Manager for Lustre\* software
+> Do not create bundles with the same name as the built-in bundles, as these will be overwritten by updates to MIntel® Manager for Lustre* software
 
 Installing a Bundle
 -------------------
@@ -136,7 +137,7 @@ A server profile is simply a JSON file defining various options.  For example, t
 
 
 * **name:**
-  An ID.  This must be unique within a Manager for Lustre* installation. To avoid name collisions, it is recommended
+  An ID.  This must be unique within a Intel® Manager for Lustre* software installation. To avoid name collisions, it is recommended
   to include the name of your organization.
 
 * **bundles:**
@@ -200,8 +201,6 @@ might be called acme-core and acme-scsi.
 }
 ```
 
-[Top of page](#1.0)
-
 ## <a name="1.9"></a>Legal Information
 
 
@@ -211,3 +210,5 @@ Copyright (c) 2017 Intel® Corporation. All rights reserved.
 
 \* Other names and brands may be claimed as the property of others.
 This product includes software developed by the OpenSSL Project for use in the OpenSSL Toolkit. (http://www.openssl.org/)
+
+[Top of page](#1.0)

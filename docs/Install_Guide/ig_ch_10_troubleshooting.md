@@ -1,5 +1,6 @@
-[**Manager for Lustre\* Software Installation Guide Table of Contents**](ig_TOC.md)
 # <a name="1.0"></a>General Troubleshooting
+
+[**Software Installation Guide Table of Contents**](ig_TOC.md)
 
 Consider the following tips before contacting technical support as you
 may find this information useful when debugging an issue:
@@ -108,7 +109,7 @@ these steps in the Command Center Manager user interface:
     menu **Failback** button.
 
 For more details about manually performing failover and failback
-operations, see the Manager for Lustre\* online Help topic,
+operations, see the Intel® Manager for Lustre* software online Help topic,
 *Managing storage*.
 
 ***Problem:*** **You need to restart cleanly after a power outage to
@@ -129,8 +130,8 @@ NID may change if the network connecting the Lustre* servers and clients
 is modified. If a Lustre* server NID changes, the server NID record in
 the Command Center must be updated.
 
-For a procedure to update server NIDS, see the Manager for
-Lustre\* online Help topic, *Handling network address changes*.
+For a procedure to update server NIDS, see the Intel® Manager for Lustre* software
+online Help topic, *Handling network address changes*.
 
 ***Problem:*** **You are unable to create or read a file from a client
 and a “*Permission denied”* message is displayed.**
