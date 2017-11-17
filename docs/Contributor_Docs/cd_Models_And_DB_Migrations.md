@@ -8,7 +8,7 @@
 
 Models exist in the chroma-manager/chroma_core/models/ directory. Once a model is created, a database migration file must be generated such that the tables reflecting the model will be created in the database. To accomplish this, do the following:
 
-1. import your model into chroma-manager/chroma_core/models/\_\_init\_\_.py
+1. import the model into chroma-manager/chroma_core/models/\_\_init\_\_.py
 ```
 from rsyslog import *
 ```
