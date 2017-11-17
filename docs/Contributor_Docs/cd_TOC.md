@@ -45,6 +45,8 @@
 
 1. [How to create offline repos for IML 4.0.0](cd_Create_Offline_Repos.md)
 
+1. [Models and Database Migrations](cd_Models_And_DB_Migrations.md)
+
 ---
 ## Resources
 
