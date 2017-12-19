@@ -24,6 +24,8 @@
 
 1. [How to Create **Frontend** Unit Tests](cd_Create_Frontend_Unit_Tests.md)
 
+1. [Running Unit Tests for intel-manager-for-lustre Repo ](cd_intel-manager-for-lustre_Unit_Testing.md)
+
 1. [Create a Cluster of Virtual Machines with Vagrant](https://github.com/intel-hpdd/Vagrantfiles/blob/master/README.md)
 
 1. [Install IML on a Vagrant Virtual Cluster](cd_Installing_IML_On_Vagrant.md)
