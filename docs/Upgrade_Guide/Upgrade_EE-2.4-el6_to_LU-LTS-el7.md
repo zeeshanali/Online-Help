@@ -298,17 +298,6 @@ Also note that the manager server distribution includes a default repository def
     ```bash
     hn=`hostname --fqdn`
     cat >/var/lib/chroma/repo/Manager-for-Lustre.repo <<__EOF
-    [iml-agent]
-    name=Intel Manager for Lustre Agent
-    baseurl=https://$hn/repo/iml-agent/7
-    enabled=1
-    gpgcheck=0
-    sslverify = 1
-    sslcacert = /var/lib/chroma/authority.crt
-    sslclientkey = /var/lib/chroma/private.pem
-    sslclientcert = /var/lib/chroma/self.crt
-    proxy=_none_
-
     [lustre-server]
     name=lustre-server
     baseurl=https://$hn/repo/lustre-server
@@ -571,7 +560,7 @@ The `pcs config export` command can be useful as a cross reference when restorin
 1. Install The Intel® Manager for Lustre\* Agent and Diagnostics packages
 
     ```bash
-    yum -y install chroma-\*
+    yum -y install python2-iml-agent\*
     ```
 
     **Note:** following warning during install / update is benign and can be ignored:
