@@ -16,18 +16,6 @@ Note: use vagrant ssh-config to get the port each server is running on. The comm
 2. Download the latest IML build (tarball). 
 from: [https://github.com/intel-hpdd/intel-manager-for-lustre/releases/download/4.0.0/iml-4.0.0.0.tar.gz](https://github.com/intel-hpdd/intel-manager-for-lustre/releases/download/4.0.0/iml-4.0.0.0.tar.gz)
 
-3. Create zfs installer and install the zfs packages on the following servers: mds1, mds2, oss1, and oss2
-   ```
-       cd ~/downloads
-       tar xzvf iml-4.0.0.0.tar.gz
-       cd iml-4.0.0.0
-       ./create_installer zfs
-       for i in {2200..2203}; do scp -P $i ~/Downloads/iml-4.0.0.0/lustre-zfs-el7-installer.tar.gz vagrant@127.0.0.1:/tmp/.; done
-       # password is "vagrant"
-       vagrant sh -c 'cd /tmp; sudo tar xzvf lustre-zfs-el7-installer.tar.gz; cd lustre-zfs; sudo ./install' mds1 mds2 oss1 oss2
-   ```
-
-
 
 ## Installing IML:
 
@@ -59,20 +47,38 @@ mds[1,2].lfs.local,oss[1,2].lfs.local
 # Make sure to select "Monitored Server Profile" for the servers profile
 ```
 This will take some time (around 5 to 10 minutes) but all four servers should add successfully.
-There will be alters and warnings about LNET. Ignore for now.
+There will be alerts and warnings about LNET. Ignore for now.
 
-Once all servers have been added with "Monitored Server Profile", each server will need to know which interface should be assigned the lustre network.
-ssh to each server (mds1, mds2, oss1, oss2)
-vagrant ssh <server>  and as root (sudo su ) run the following commands:
+## Installing lustre on each MDS and OSS Server
+
+ZFS can now be installed on each mds and oss node since the agent software has been deployed. To do this, follow these simple steps:
+
+1. Create the zfs installer and install the necessary packages on the following servers: mds1, mds2, oss1, and oss2
+
+   ```
+       cd ~/downloads
+       tar xzvf iml-4.0.0.0.tar.gz
+       cd iml-4.0.0.0
+       ./create_installer zfs
+       for i in {2200..2203}; do scp -P $i ~/Downloads/iml-4.0.0.0/lustre-zfs-el7-installer.tar.gz vagrant@127.0.0.1:/tmp/.; done
+       # password is "vagrant"
+       vagrant sh -c 'cd /tmp; sudo tar xzvf lustre-zfs-el7-installer.tar.gz; cd lustre-zfs; sudo ./install' mds1 mds2 oss1 oss2
+   ```
+
+## Configuring each MDS and OSS server
+
+Each server will need to know which interface should be assigned the lustre network.
+Run the following commands:
 
 ```
-    systemctl stop firewalld; systemctl disable firewalld
-    systemctl start ntpd
-    echo 'options lnet networks=tcp0(enp0s9)' > /etc/modprobe.d/lustre.conf
-    modprobe lnet
-    lctl network configure
-    /sbin/modprobe zfs
-    genhostid
+   vagrant sh -c '
+   systemctl stop firewalld; systemctl disable firewalld;
+   systemctl start ntpd;
+   echo "options lnet networks=tcp0(enp0s9)" > /etc/modprobe.d/lustre.conf;
+   modprobe lnet;
+   lctl network configure;
+   /sbin/modprobe zfs;
+   genhostid' mds1 mds2 oss1 oss2
 ```
 
 The IML GUI should show that the LNET and NID Configuration is updated (IP Address 10.73.20.x to use `Lustre Network 0`). All alerts are cleared.
@@ -121,7 +127,7 @@ At this point you should wait until the volume disappears from the volumes page 
 ```
     vagrant ssh oss1
     sudo -i
-    zpool create oss1 -o cachefile=none raidz2 /dev/disk/by-id/ata-VBOX_HARDDISK_OSTPORT1000000000000 /dev/disk/by-id/ata-VBOX_HARDDISK_OSTPORT3000000000000 /dev/disk/by-id/ata-VBOX_HARDDISK_OSTPORT5000000000000 /dev/disk/by-id/ata-VBOX_HARDDISK_OSTPORT7000000000000
+    zpool create oss1 -o cachefile=none raidz2 /dev/disk/by-id/ata-VBOX_HARDDISK_OSTP1ORT200000000000 /dev/disk/by-id/ata-VBOX_HARDDISK_OST3PORT400000000000 /dev/disk/by-id/ata-VBOX_HARDDISK_OST5PORT600000000000 /dev/disk/by-id/ata-VBOX_HARDDISK_OST7PORT800000000000
     mkfs.lustre --failover 10.73.20.22@tcp --ost --backfstype=zfs --fsname=zfsmo --index=0 --mgsnode=10.73.20.11@tcp oss1/ost00
     zfs compression=on oss1
     zpool export oss1
@@ -138,7 +144,7 @@ At this point you should wait until the volume disappears from the volumes page 
 ```
     vagrant ssh oss2
     sudo -i
-    zpool create oss2 -o cachefile=none raidz2 /dev/disk/by-id/ata-VBOX_HARDDISK_OSTPORT2000000000000 /dev/disk/by-id/ata-VBOX_HARDDISK_OSTPORT4000000000000 /dev/disk/by-id/ata-VBOX_HARDDISK_OSTPORT6000000000000 /dev/disk/by-id/ata-VBOX_HARDDISK_OSTPORT8000000000000
+    zpool create oss2 -o cachefile=none raidz2 /dev/disk/by-id/ata-VBOX_HARDDISK_OST0PORT100000000000 /dev/disk/by-id/ata-VBOX_HARDDISK_OST2PORT300000000000 /dev/disk/by-id/ata-VBOX_HARDDISK_OST4PORT500000000000 /dev/disk/by-id/ata-VBOX_HARDDISK_OST6PORT700000000000
     mkfs.lustre --failover  10.73.20.21@tcp --ost --backfstype=zfs --fsname=zfsmo --index=1 --mgsnode=10.73.20.11@tcp oss2/ost01
     zfs compression=on oss2
     zpool export oss2
