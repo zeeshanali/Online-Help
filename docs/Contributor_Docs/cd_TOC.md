@@ -47,6 +47,8 @@
 
 1. [How to create offline repos for IML 4.0.0](cd_Create_Offline_Repos.md)
 
+1. [How to debug rust tests](cd_Debugging_Rust_Tests.md)
+
 ---
 ## Resources
 
