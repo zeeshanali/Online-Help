@@ -21,5 +21,3 @@
 ### [**Software Contributor Documentation**](docs/Contributor_Docs/cd_TOC.md)
 
 * Documents for contributing to the Intel® Manager for Lustre* software.
-
-[![Build Status](https://copr.fedorainfracloud.org/coprs/managerforlustre/manager-for-lustre/package/iml-online-help/status_image/last_build.png)](https://copr.fedorainfracloud.org/coprs/managerforlustre/manager-for-lustre/package/iml-online-help/)
