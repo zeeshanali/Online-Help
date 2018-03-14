@@ -1,6 +1,6 @@
 %define base_name online-help
 Name:       iml-%{base_name}
-Version:    2.3.2
+Version:    2.4.0
 Release:    1%{?dist}
 Summary:    IML Online Help
 License:    MIT
@@ -32,6 +32,11 @@ rm -rf %{buildroot}
 %{_libdir}/iml-manager/%{name}
 
 %changelog
+* Wed Mar 14 2018 Joe Grund <joe.grund@intel.com> - 2.4.0-1
+- Add upgrade docs.
+- Add debugging rust section.
+- Add module-tools.
+
 * Mon Oct 23 2017 Joe Grund <joe.grund@intel.com> - 2.3.2-1
 - Add doc on building IML.
 - Fix ZFS on Vagrant docs to reflect persistent disk serials.
