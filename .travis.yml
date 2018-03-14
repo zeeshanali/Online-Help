@@ -31,7 +31,9 @@ jobs:
         provider: npm
         email: "$NPM_EMAIL"
         skip_cleanup: true
-        api_key: "$NPM_TOKEN" 
+        api_key: "$NPM_TOKEN"
+        on:
+          all_branches: true
     - stage: deploy-copr
       if: branch =~ ^v\d+\.\d+\.\d+-.+$
       env: Type='Copr deploy'
